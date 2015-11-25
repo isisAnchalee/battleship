@@ -1,0 +1,11 @@
+/Users/isisanchalee/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20151124-65483-c7x8h3.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20151124-65483-135h2cc
