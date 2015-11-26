@@ -1,0 +1,17 @@
+/.idea/*
+/tmp/*
+/log/*
+vendor/bundle/*
+.bundle*
+tmp/**/*
+/coverage/*
+
+
+# Local configuration
+config/database.yml
+config/session_keys.yml
+config/shard.yml
+config/localhost.crt
+config/localhost.key
+vendor/assets/bower_components
+log/development.log

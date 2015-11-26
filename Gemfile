@@ -7,9 +7,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'slim-rails'
+gem 'haml'
 gem 'faker'
 gem 'unicorn'
+gem 'turbolinks'
+gem 'devise'
+gem 'omniauth-facebook'
 
 group :production do
   gem 'pg',             '0.17.1'
