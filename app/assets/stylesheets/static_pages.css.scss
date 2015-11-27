@@ -1,0 +1,51 @@
+$wombat-light-white :#ececec;
+$wombat-teal-blue   :#2e829b;
+$wombat-black       :#020202;
+$wombat-header-red  :#bc0200;
+$wombat-bg-grey     :#c9c9c9;
+
+html {
+  background-color: $wombat-bg-grey;
+  font-family: tahoma;
+}
+
+body{
+  font-size: 11px;
+  letter-spacing: 2.4px;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Airborne Pilot';
+  src: url('arbrnplt.ttf') format('truetype');
+}
+
+[data-controller="devise/sessions"]{
+  .wombattleships-header{
+    font-family: 'Airborne Pilot';
+    font-size: 60px;
+  }
+
+  .login-wrapper{
+    width: 400px;
+
+    #login-form {
+      #login-btn{
+        letter-spacing: 2.4px;
+      }
+      .login-input{
+        height: 33px;
+        width: 350px;
+        border: 1px solid $wombat-light-white;
+        background-color: $wombat-light-white;
+      }
+
+      .remember{
+        margin-left: 230px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
