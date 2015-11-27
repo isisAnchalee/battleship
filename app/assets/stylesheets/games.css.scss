@@ -7,7 +7,8 @@ $wombat-med-grey    :#a6a6a6;
 
 html {
   background-color: $wombat-bg-grey;
-  font-family: tahoma;
+  font-family: 'Inconsolata', tahoma;
+  text-transform: uppercase;
 }
 
 body{
@@ -26,8 +27,19 @@ h1{
   src: url('arbrnplt.ttf') format('truetype');
 }
 
+.header, a{
+  margin-top: -107px;
+  color: white;
+  text-decoration: none;
+}
+
 .header{
-  margin-top: -90px;
+  width: 100%;
+  height: 30px;
+  position:relative;
+  top:100px;
+  background-color: $wombat-header-red;
+  line-height: 30px;
 }
 
 .input{
@@ -74,6 +86,8 @@ h1{
     width: 450px;
     height: 400px;
     background-color: $wombat-med-grey;
+    position: relative;
+    top: -10px;
   }
 
   .new-game-wrapper{
@@ -83,17 +97,14 @@ h1{
     }
   }
 
-  .previous-game-history, .join-existing-game{
-    background-color: $wombat-light-white;
+  .inner-game-container{
     position: relative;
-    text-align: center;
-    margin-top: -340px;
-    width: 180px;
-    height: 280px;
+    top: -50px;
   }
 
-  .join-existing-game{
-    left: -32px;
+  .new-game-header{
+    position: relative;
+    top: 20px;
   }
 }
 

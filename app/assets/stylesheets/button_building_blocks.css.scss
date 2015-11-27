@@ -52,6 +52,9 @@ $ol-white          : #ffffff;
   letter-spacing: 2.4px;
 }
 
+.airborne-font{
+  font-family: 'Airborne Pilot';
+}
 
 .main-btn{
   background-color: #ececec;
@@ -65,8 +68,12 @@ $ol-white          : #ffffff;
   transition: border 0.4s ease;
   text-shadow:none !important;
   box-shadow: none !important;
+  transition: all 0.2s ease;
+
   &:hover{
     cursor: pointer;
+    background-color: #2e829b;
+    color: white;
   }
 }
 
