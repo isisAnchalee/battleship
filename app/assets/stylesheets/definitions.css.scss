@@ -1,0 +1,190 @@
+/** colors **/
+$wombat-light-white :#ececec;
+$wombat-teal-blue   :#2e829b;
+$wombat-black       :#020202;
+$wombat-header-red  :#bc0200;
+$wombat-bg-grey     :#c9c9c9;
+$wombat-med-grey    :#a6a6a6;
+
+/** base definitions **/
+html {
+  background-color: $wombat-bg-grey;
+  font-family: 'Inconsolata', tahoma;
+  text-transform: uppercase;
+}
+
+body{
+  font-size: 11px;
+  letter-spacing: 2.4px;
+  font-weight: 500;
+}
+
+h1{
+  font-family: 'Airborne Pilot';
+  font-size: 60px;
+}
+
+@font-face {
+  font-family: 'Airborne Pilot';
+  src: url('arbrnplt.ttf') format('truetype');
+}
+
+/** placeholders **/
+
+::-webkit-input-placeholder {
+  font-family: 'Inconsolata', tahoma;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  padding-left: 2px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Inconsolata', tahoma;
+  letter-spacing: 2.4px;  
+  text-transform: uppercase;
+  padding-left: 2px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-family: 'Inconsolata', tahoma;
+  letter-spacing: 2.4px; 
+  text-transform: uppercase; 
+  padding-left: 2px;
+}
+
+:-ms-input-placeholder {  
+  font-family: 'Inconsolata', tahoma;
+  letter-spacing: 2.4px; 
+  text-transform: uppercase; 
+  padding-left: 2px;
+}
+
+/** headers **/
+
+.header, a{
+  margin-top: -107px;
+  color: white;
+  text-decoration: none;
+}
+
+.header{
+  width: 100%;
+  height: 30px;
+  position:relative;
+  top:100px;
+  background-color: $wombat-teal-blue;
+  line-height: 30px;
+}
+
+/** inputs **/
+
+.input{
+  height: 33px;
+  width: 346px;
+  border: 1px solid $wombat-light-white;
+  background-color: $wombat-light-white;
+  z-index: 200;
+}
+
+/** cursor **/
+.cursor-pointer{
+  cursor: pointer;
+}
+
+/** positioning/margins/padding **/
+
+.margin-0-auto{
+  margin: 0 auto;
+}
+
+.margin-top-50px{
+  margin-top: 150px;
+}
+
+.margin-top-10{
+  margin-top: 10px;
+}
+
+.margin-bot-neg-50{
+  margin-bottom: 0px;
+}
+
+.margin-top-110px{
+  margin-top: 180px;
+}
+
+.margin-top-50{
+  margin-top: 50px;
+}
+
+.margin-left-10{
+  margin-left: 10px;
+}
+
+.margin-right-10{
+  margin-right: 10px;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.display-inline{
+  display: inline;
+}
+
+/** images **/
+
+.img-half-size{
+  -moz-transform:scale(0.75);
+  -webkit-transform:scale(0.75);
+  transform:scale(0.75);
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+/** fonts **/
+
+.inconsolata-font{
+  font-family: 'Inconsolata', tahoma;
+  text-transform: uppercase;
+}
+
+.font-weight-500{
+  font-weight: 500;
+}
+
+.airborne-font{
+  font-family: 'Airborne Pilot';
+}
+
+.letter-spacing-2{
+  letter-spacing: 2.4px;
+}
+
+/** buttons **/
+
+.main-btn{
+  background-color: #ececec;
+  border: none;
+  color: #020202;
+  padding: 9px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 2px;
+  text-align: center;
+  transition: border 0.4s ease;
+  text-shadow:none !important;
+  box-shadow: none !important;
+  transition: all 0.2s ease;
+
+  &:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    background-color: #bc0200;
+    color: white;
+  }
+}
+
