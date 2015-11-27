@@ -27,6 +27,34 @@ h1{
   src: url('arbrnplt.ttf') format('truetype');
 }
 
+::-webkit-input-placeholder {
+  font-family: 'Inconsolata', tahoma;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  padding-left: 2px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Inconsolata', tahoma;
+  letter-spacing: 2.4px;  
+  text-transform: uppercase;
+  padding-left: 2px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-family: 'Inconsolata', tahoma;
+  letter-spacing: 2.4px; 
+  text-transform: uppercase; 
+  padding-left: 2px;
+}
+
+:-ms-input-placeholder {  
+  font-family: 'Inconsolata', tahoma;
+  letter-spacing: 2.4px; 
+  text-transform: uppercase; 
+  padding-left: 2px;
+}
+
 .header, a{
   margin-top: -107px;
   color: white;
@@ -38,15 +66,16 @@ h1{
   height: 30px;
   position:relative;
   top:100px;
-  background-color: $wombat-header-red;
+  background-color: $wombat-teal-blue;
   line-height: 30px;
 }
 
 .input{
   height: 33px;
-  width: 350px;
+  width: 346px;
   border: 1px solid $wombat-light-white;
   background-color: $wombat-light-white;
+  z-index: 200;
 }
 
 [data-controller="devise/sessions"]{
@@ -87,7 +116,7 @@ h1{
     height: 400px;
     background-color: $wombat-med-grey;
     position: relative;
-    top: -10px;
+    top: -20px;
   }
 
   .new-game-wrapper{
@@ -104,7 +133,7 @@ h1{
 
   .new-game-header{
     position: relative;
-    top: 20px;
+    top: 15px;
   }
 }
 

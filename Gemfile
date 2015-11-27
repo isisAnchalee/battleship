@@ -15,6 +15,7 @@ gem 'devise'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'font-awesome-rails'
+gem 'redis-rails'
 
 group :production do
   gem 'pg',             '0.17.1'

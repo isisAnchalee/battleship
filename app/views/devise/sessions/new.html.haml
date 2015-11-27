@@ -16,7 +16,7 @@
             = f.check_box :remember_me
             = f.label :remember_me
         .actions
-          = f.submit 'Log in', class: 'main-btn', id: 'login-btn'
+          = f.submit 'Log in', class: 'main-btn inconsolata-font', id: 'login-btn'
           - if devise_mapping.registerable? && controller_name != 'registrations'
             = link_to 'Sign up', new_registration_path(@user), class: 'main-btn display-inline', id: 'signup-btn'
-          = link_to fa_icon_tag('twitter') + " Sign in with Twitter", user_omniauth_authorize_path(:twitter), class: 'main-btn display-inline', id: 'twitter-btn'
+          = link_to fa_icon_tag('twitter') + " Twitter Sign In", user_omniauth_authorize_path(:twitter), class: 'main-btn display-inline', id: 'twitter-btn'

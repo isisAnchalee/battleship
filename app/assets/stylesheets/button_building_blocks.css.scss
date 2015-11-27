@@ -60,7 +60,7 @@ $ol-white          : #ffffff;
   background-color: #ececec;
   border: none;
   color: #020202;
-  padding: 9px 14px;
+  padding: 9px 15px;
   cursor: pointer;
   text-decoration: none;
   border-radius: 4px;
@@ -71,8 +71,9 @@ $ol-white          : #ffffff;
   transition: all 0.2s ease;
 
   &:hover{
+    opacity: 0.7;
     cursor: pointer;
-    background-color: #2e829b;
+    background-color: #bc0200;
     color: white;
   }
 }
