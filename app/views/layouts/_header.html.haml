@@ -1,3 +1,5 @@
 .header.pull-right{'data-controller': params[:controller]}
   %span.your-score
     Your Score: 0 Points
+  .profile-image
+    =image_tag(current_user.picture, class: 'img-circle')

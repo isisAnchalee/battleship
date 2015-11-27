@@ -1,7 +1,11 @@
 module ApplicationHelper
 
+  def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+
   def build_blinking_header
-    str, result, alternate = 'Wombattleships', ''
+    str, result = 'Wombattleships', ''
     alternate = false
     str.chars.each_with_index do |char, i|
       prefix = ''

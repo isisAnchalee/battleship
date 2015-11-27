@@ -34047,3 +34047,2526 @@ Migrating to AddPictureToUsers (20151127093836)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+
+
+Started GET "/" for ::1 at 2015-11-27 01:42:12 -0800
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.1ms)
+  Rendered games/new.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 83ms (Views: 66.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/position_definitions.self-c38971d7e3aab0db2335b0ca9dfc9e1a99569fe377719ded36d211e303c9159f.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/static_pages.self-6d328e9d48fe646f13c2b3a0f9bde7064e744020b94a6384748f86ae88985f2c.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:42:13 -0800
+
+
+Started GET "/users/sign_out" for ::1 at 2015-11-27 01:42:49 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:42:49 -0800
+Processing by GamesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for ::1 at 2015-11-27 01:42:49 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 98ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for ::1 at 2015-11-27 01:42:49 -0800
+
+
+Started GET "/users/auth/twitter" for ::1 at 2015-11-27 01:42:51 -0800
+
+
+Started GET "/users/auth/twitter/callback?oauth_token=VOOnJAAAAAAAi5QcAAABUUhS5c8&oauth_verifier=FP0pVEPqfuxxlbyxcOMdTnljQRiDw5Vb" for ::1 at 2015-11-27 01:42:52 -0800
+Processing by OmniauthCallbacksController#twitter as HTML
+  Parameters: {"oauth_token"=>"VOOnJAAAAAAAi5QcAAABUUhS5c8", "oauth_verifier"=>"FP0pVEPqfuxxlbyxcOMdTnljQRiDw5Vb"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["provider", "twitter"], ["uid", "2918134290"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-11-27 09:17:53.184756"], ["current_sign_in_at", "2015-11-27 09:42:53.601146"], ["sign_in_count", 9], ["updated_at", "2015-11-27 09:42:53.602016"], ["id", 2]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:42:53 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.1ms)
+  Rendered games/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 94ms (Views: 92.9ms | ActiveRecord: 0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+
+
+Started GET "/" for ::1 at 2015-11-27 01:43:30 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.2ms)
+  Rendered games/new.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 94ms (Views: 77.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_out" for ::1 at 2015-11-27 01:43:34 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:43:34 -0800
+Processing by GamesController#new as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for ::1 at 2015-11-27 01:43:34 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/twitter" for ::1 at 2015-11-27 01:43:37 -0800
+
+
+Started GET "/users/auth/twitter/callback?oauth_token=GprzIgAAAAAAi5QcAAABUUhTmrM&oauth_verifier=zapQnlhPkWFr2Bn6VYDucZjtuncGCqNR" for ::1 at 2015-11-27 01:43:38 -0800
+Processing by OmniauthCallbacksController#twitter as HTML
+  Parameters: {"oauth_token"=>"GprzIgAAAAAAi5QcAAABUUhTmrM", "oauth_verifier"=>"zapQnlhPkWFr2Bn6VYDucZjtuncGCqNR"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "twitter"], ["uid", "2918134290"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-27 09:42:53.601146"], ["current_sign_in_at", "2015-11-27 09:43:39.393689"], ["sign_in_count", 10], ["updated_at", "2015-11-27 09:43:39.394462"], ["id", 2]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:43:39 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.2ms)
+  Rendered games/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 95ms (Views: 93.2ms | ActiveRecord: 0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+
+
+Started GET "/" for ::1 at 2015-11-27 01:44:42 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.1ms)
+  Rendered games/new.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 162ms (Views: 143.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:44:43 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.1ms)
+  Rendered games/new.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 01:44:43 -0800
+
+
+Started GET "/users/sign_out" for ::1 at 2015-11-27 01:44:48 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:44:48 -0800
+Processing by GamesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for ::1 at 2015-11-27 01:44:48 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 93ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/twitter" for ::1 at 2015-11-27 01:44:49 -0800
+
+
+Started GET "/users/auth/twitter/callback?oauth_token=KhCunwAAAAAAi5QcAAABUUhUtVc&oauth_verifier=kPx5DlVWTbwZJ3t02NeTmbsfOaobjxTE" for ::1 at 2015-11-27 01:44:50 -0800
+Processing by OmniauthCallbacksController#twitter as HTML
+  Parameters: {"oauth_token"=>"KhCunwAAAAAAi5QcAAABUUhUtVc", "oauth_verifier"=>"kPx5DlVWTbwZJ3t02NeTmbsfOaobjxTE"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "twitter"], ["uid", "2918134290"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-27 09:43:39.393689"], ["current_sign_in_at", "2015-11-27 09:44:51.829614"], ["sign_in_count", 11], ["updated_at", "2015-11-27 09:44:51.830434"], ["id", 2]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:44:51 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered games/new.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+
+
+Started GET "/users/sign_out" for ::1 at 2015-11-27 01:45:30 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:45:30 -0800
+Processing by GamesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for ::1 at 2015-11-27 01:45:30 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 76ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/twitter" for ::1 at 2015-11-27 01:45:31 -0800
+
+
+Started GET "/users/auth/twitter/callback?oauth_token=_bWbrgAAAAAAi5QcAAABUUhVWfg&oauth_verifier=CoOCjsN4jJbbQHuoN0QBWiArKAVpItXb" for ::1 at 2015-11-27 01:45:32 -0800
+Processing by OmniauthCallbacksController#twitter as HTML
+  Parameters: {"oauth_token"=>"_bWbrgAAAAAAi5QcAAABUUhVWfg", "oauth_verifier"=>"CoOCjsN4jJbbQHuoN0QBWiArKAVpItXb"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "twitter"], ["uid", "2918134290"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-27 09:44:51.829614"], ["current_sign_in_at", "2015-11-27 09:45:33.862202"], ["sign_in_count", 12], ["updated_at", "2015-11-27 09:45:33.862831"], ["id", 2]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:45:33 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.2ms)
+  Rendered games/new.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 83ms (Views: 77.7ms | ActiveRecord: 0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+
+
+Started GET "/users/sign_out" for ::1 at 2015-11-27 01:46:10 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:46:10 -0800
+Processing by GamesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for ::1 at 2015-11-27 01:46:10 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 107ms (Views: 105.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/twitter" for ::1 at 2015-11-27 01:46:11 -0800
+
+
+Started GET "/users/auth/twitter/callback?oauth_token=ibEEdQAAAAAAi5QcAAABUUhV9Ks&oauth_verifier=s64woxpIt5aRwl6e4M6lovywz9E6g7RQ" for ::1 at 2015-11-27 01:46:12 -0800
+Processing by OmniauthCallbacksController#twitter as HTML
+  Parameters: {"oauth_token"=>"ibEEdQAAAAAAi5QcAAABUUhV9Ks", "oauth_verifier"=>"s64woxpIt5aRwl6e4M6lovywz9E6g7RQ"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "twitter"], ["uid", "2918134290"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-27 09:45:33.862202"], ["current_sign_in_at", "2015-11-27 09:46:13.561787"], ["sign_in_count", 13], ["updated_at", "2015-11-27 09:46:13.562432"], ["id", 2]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:46:13 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.4ms)
+  Rendered games/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 89ms (Views: 83.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_out" for ::1 at 2015-11-27 01:47:02 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:47:02 -0800
+Processing by GamesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for ::1 at 2015-11-27 01:47:02 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/twitter" for ::1 at 2015-11-27 01:47:03 -0800
+
+
+Started GET "/users/auth/twitter/callback?oauth_token=hkZBsAAAAAAAi5QcAAABUUhWwZ4&oauth_verifier=xm9BAsVaYx53A8htCDWiivzZIzuRuZBr" for ::1 at 2015-11-27 01:47:05 -0800
+Processing by OmniauthCallbacksController#twitter as HTML
+  Parameters: {"oauth_token"=>"hkZBsAAAAAAAi5QcAAABUUhWwZ4", "oauth_verifier"=>"xm9BAsVaYx53A8htCDWiivzZIzuRuZBr"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "twitter"], ["uid", "2918134290"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-27 09:46:13.561787"], ["current_sign_in_at", "2015-11-27 09:47:59.428177"], ["sign_in_count", 14], ["updated_at", "2015-11-27 09:47:59.435850"], ["id", 2]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 52869ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:48:09 -0800
+Processing by GamesController#new as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for ::1 at 2015-11-27 01:48:09 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 103ms (Views: 95.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/position_definitions.self-c38971d7e3aab0db2335b0ca9dfc9e1a99569fe377719ded36d211e303c9159f.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/static_pages.self-6d328e9d48fe646f13c2b3a0f9bde7064e744020b94a6384748f86ae88985f2c.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:48:10 -0800
+
+
+Started GET "/users/auth/twitter" for ::1 at 2015-11-27 01:48:11 -0800
+
+
+Started GET "/users/auth/twitter/callback?oauth_token=7WAolQAAAAAAi5QcAAABUUhXyOQ&oauth_verifier=4JJ1xC3gPLHySHCBjFUm1TLlIgMtpVad" for ::1 at 2015-11-27 01:48:12 -0800
+Processing by OmniauthCallbacksController#twitter as HTML
+  Parameters: {"oauth_token"=>"7WAolQAAAAAAi5QcAAABUUhXyOQ", "oauth_verifier"=>"4JJ1xC3gPLHySHCBjFUm1TLlIgMtpVad"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "twitter"], ["uid", "2918134290"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-27 09:47:59.428177"], ["current_sign_in_at", "2015-11-27 09:48:18.732755"], ["sign_in_count", 15], ["updated_at", "2015-11-27 09:48:18.733470"], ["id", 2]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5349ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:48:18 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.5ms)
+  Rendered games/new.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 138ms (Views: 125.8ms | ActiveRecord: 0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+
+
+Started GET "/" for ::1 at 2015-11-27 01:49:54 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (3.5ms)
+  Rendered games/new.html.haml within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `picture' for nil:NilClass):
+    2:   %span.your-score
+    3:     Your Score: 0 Points
+    4:   .profile-image
+    5:     =image_tage(current_user.picture, class: 'img-circle')
+  app/views/layouts/_header.html.haml:5:in `_app_views_layouts__header_html_haml___2699217582341815417_70125311863740'
+  app/views/games/new.html.haml:1:in `_app_views_games_new_html_haml__3342997647902678477_70125292604440'
+  app/controllers/games_controller.rb:4:in `new'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.2ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.9ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (103.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:50:28 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (24.8ms)
+  Rendered games/new.html.haml within layouts/application (26.4ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (undefined method `image_tage' for #<#<Class:0x007f8ea1d4b110>:0x007f8ea4b56f50>):
+    2:   %span.your-score
+    3:     Your Score: 0 Points
+    4:   .profile-image
+    5:     =image_tage(current_user.picture, class: 'img-circle')
+  app/views/layouts/_header.html.haml:5:in `_app_views_layouts__header_html_haml___2699217582341815417_70125311863740'
+  app/views/games/new.html.haml:1:in `_app_views_games_new_html_haml__3342997647902678477_70125292604440'
+  app/controllers/games_controller.rb:4:in `new'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.5ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.3ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (91.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-27 01:50:36 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (1.4ms)
+  Rendered games/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 370ms (Views: 368.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/static_pages.self-6d328e9d48fe646f13c2b3a0f9bde7064e744020b94a6384748f86ae88985f2c.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:50:36 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 01:51:51 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.6ms)
+  Rendered games/new.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 213ms (Views: 181.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:51:51 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:51:51 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:51:51 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/static_pages.self-6d328e9d48fe646f13c2b3a0f9bde7064e744020b94a6384748f86ae88985f2c.css?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:51:52 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 01:52:10 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered games/new.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 89ms (Views: 87.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/static_pages.self-6d328e9d48fe646f13c2b3a0f9bde7064e744020b94a6384748f86ae88985f2c.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:52:10 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 01:57:12 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered games/new.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 109ms (Views: 91.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/static_pages.self-6d328e9d48fe646f13c2b3a0f9bde7064e744020b94a6384748f86ae88985f2c.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:57:12 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 01:57:19 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered games/new.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/static_pages.self-6d328e9d48fe646f13c2b3a0f9bde7064e744020b94a6384748f86ae88985f2c.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:57:19 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:57:20 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:20 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:20 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:20 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:20 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:20 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:20 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:57:20 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:57:20 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:57:20 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 01:58:28 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered games/new.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 437ms (Views: 434.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/static_pages.self-164d3db1795db1ce587e8c24d64c01aa302f3a2170d8214e6c039a921409014d.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:28 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:29 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:29 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:58:29 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:58:29 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 01:58:29 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 01:58:37 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.8ms)
+  Rendered games/new.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 377ms (Views: 374.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:37 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:37 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:37 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:37 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:37 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:37 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:37 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:58:37 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:58:37 -0800
+
+
+Started GET "/assets/static_pages.self-4d78d761aea0c4a6473d332d5719a06b1d125bad761eaa667f03a1987abfb7e9.css?body=1" for ::1 at 2015-11-27 01:58:37 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 01:58:38 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 01:58:55 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.4ms)
+  Rendered games/new.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 388ms (Views: 385.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/static_pages.self-e50a9edfca083ef1b01c62de922c48199b082bf026da03f4c30ff3f74c044cec.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:58:55 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 01:58:56 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 01:59:12 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.8ms)
+  Rendered games/new.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 504ms (Views: 501.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/static_pages.self-6504a6e8beb8fb0119d7a6908d8f305446d55deb5c9e6a929e958bdd9acc508d.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:12 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:13 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:13 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:13 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:13 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:13 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:13 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:59:13 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:59:13 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 01:59:13 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 01:59:23 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.6ms)
+  Rendered games/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 615ms (Views: 612.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/static_pages.self-413f5ef2a21022bfb2f5d222d7c8dea9eb1fbbc88d5f666d7a246bb93f87bc5d.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 01:59:23 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 01:59:45 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.6ms)
+  Rendered games/new.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 661ms (Views: 658.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/static_pages.self-d22fc8bdc5771dce3214dbc156799269a16d5a97ef68815522df17d65aee0f9f.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 01:59:46 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 01:59:57 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (1.0ms)
+  Rendered games/new.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 1915ms (Views: 1909.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/static_pages.self-76df81f04b556bc4d5f1bd0d298fa37143d4a700340e7b81604460b21a532c31.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 01:59:59 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:00:00 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:00:00 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 02:00:00 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:00:01 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (1.6ms)
+  Rendered games/new.html.haml within layouts/application (13.6ms)
+Completed 200 OK in 4011ms (Views: 4003.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/static_pages.self-4b7042ffc29bbbf8d343091afcc76b67543918c6fb1ac0c2346eb83d39fa9197.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:05 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:06 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:06 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:06 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:06 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:00:06 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:00:06 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 02:00:06 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:00:08 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (1.6ms)
+  Rendered games/new.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 614ms (Views: 595.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/static_pages.self-d22fc8bdc5771dce3214dbc156799269a16d5a97ef68815522df17d65aee0f9f.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:00:09 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 02:00:10 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:00:25 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.9ms)
+  Rendered games/new.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 598ms (Views: 596.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/static_pages.self-aba755f1ef5bcff6b1b2660e34348aec462f0457b887908211135395288268ff.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 02:00:26 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:00:45 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (1.2ms)
+  Rendered games/new.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 1469ms (Views: 1462.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/static_pages.self-c9c54698275dcb5ceb8928d90fee4d04441278c8e4302f09314b47646f28be2e.css?body=1" for ::1 at 2015-11-27 02:00:47 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 02:00:47 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:01:05 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.8ms)
+  Rendered games/new.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 643ms (Views: 639.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/static_pages.self-3547f95739ec3d3b918c2a3a105923bda9b7e3df6910bffc48916dc5d10075a7.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 02:01:06 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:02:06 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (0.9ms)
+  Rendered games/new.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 1765ms (Views: 1760.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/static_pages.self-4790d1211f7f849c55c292dc575dc1497c0deb5e4db05c2f68fabadd2015a80e.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 02:02:08 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 02:02:09 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:09 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:09 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:09 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:09 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:09 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:09 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:09 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:02:09 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:02:09 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 02:02:09 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:02:27 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (6.2ms)
+  Rendered games/new.html.haml within layouts/application (65.2ms)
+Completed 200 OK in 637ms (Views: 624.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/static_pages.self-4790d1211f7f849c55c292dc575dc1497c0deb5e4db05c2f68fabadd2015a80e.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:02:29 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:03:05 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (1.3ms)
+  Rendered games/new.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 1583ms (Views: 1575.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/static_pages.self-f3651aa00a6fe4519c5233433e36f06e237a2c5fbba27b29f8ae3131869f97ee.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 02:03:07 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 02:03:08 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 02:03:08 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 02:03:08 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:03:08 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (1.6ms)
+  Rendered games/new.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 730ms (Views: 720.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:08 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:08 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:08 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:08 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:09 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:03:10 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:10 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:10 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:03:10 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 02:03:10 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:03:31 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (1.0ms)
+  Rendered games/new.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 1444ms (Views: 1438.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/static_pages.self-acee35fff8c611d91d6060e80e797c4920b81807f385de40451d4bcc4747ece6.css?body=1" for ::1 at 2015-11-27 02:03:32 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 02:03:33 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:03:40 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (27.0ms)
+  Rendered games/new.html.haml within layouts/application (50.8ms)
+Completed 200 OK in 1653ms (Views: 1645.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/position_definitions.self-6c310d0511908f26569156abc19c66387e804d86a37ff1fa4803a285da888962.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/static_pages.self-35591445cb971bb6d7b2650fff7a2849d244761930847d923a824a976c9855be.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:42 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:43 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:43 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:43 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:43 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:43 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:03:43 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:03:43 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:03:43 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 02:03:43 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:05:32 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (4.8ms)
+  Rendered games/new.html.haml within layouts/application (20.8ms)
+Completed 200 OK in 1429ms (Views: 1423.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:34 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:34 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:34 -0800
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:34 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:34 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:34 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:34 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:34 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/position_definitions.self-b30c351651ed53a79031493ee9b917b400b14eb6ea98f85d13e833597c69bb26.css?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/static_pages.self-35591445cb971bb6d7b2650fff7a2849d244761930847d923a824a976c9855be.css?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:05:35 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:05:52 -0800
+Processing by GamesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.haml (1.2ms)
+  Rendered games/new.html.haml within layouts/application (17.4ms)
+Completed 200 OK in 338ms (Views: 331.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/_color_definitions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/api/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/api/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/api/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/api/v1/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/button_building_blocks.self-1040819d70af51ac8409973335b0656789379db918a8ab63106530adc082a812.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/other_building_blocks.self-b49ac91c021125b384fe0135a063fbceaedcdf8fa54b4d1ac42867103ed11902.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/static_pages.self-35591445cb971bb6d7b2650fff7a2849d244761930847d923a824a976c9855be.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/position_definitions.self-b30c351651ed53a79031493ee9b917b400b14eb6ea98f85d13e833597c69bb26.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/typing_header.self-bf652bc7d865e7dc46e925962cd5b5069cdc9d790f81ab2336ab4106dc158c84.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/application.self-f612af8ba08d719bb23cebcbadd84df2c5d47f4cf149024855dfaa5befdac6b4.css?body=1" for ::1 at 2015-11-27 02:05:53 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-27 02:05:54 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-27 02:05:54 -0800
+
+
+Started GET "/assets/api/api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:54 -0800
+
+
+Started GET "/assets/api/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:54 -0800
+
+
+Started GET "/assets/api/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:54 -0800
+
+
+Started GET "/assets/api/v1/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:54 -0800
+
+
+Started GET "/assets/api/v1/registrations.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:54 -0800
+
+
+Started GET "/assets/games.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:54 -0800
+
+
+Started GET "/assets/api/v1/players.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-27 02:05:54 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-27 02:05:54 -0800
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-27 02:05:54 -0800
+
+
+Started GET "/" for ::1 at 2015-11-27 02:09:48 -0800
+Processing by GamesController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.haml (1.0ms)
+  Rendered games/new.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 1684ms (Views: 1615.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/static_pages.self-47d23c0f72a4f4fe6503cf18eb90a0981effa0a3da15b032ab350158c7744cbb.css?body=1" for ::1 at 2015-11-27 02:09:51 -0800
+
+
+Started GET "/assets/arbrnplt.ttf" for ::1 at 2015-11-27 02:09:51 -0800

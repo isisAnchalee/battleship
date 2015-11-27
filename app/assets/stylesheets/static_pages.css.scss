@@ -82,5 +82,18 @@ h1{
       margin-top: 15px;
     }
   }
+
+  .previous-game-history, .join-existing-game{
+    background-color: $wombat-light-white;
+    position: relative;
+    text-align: center;
+    margin-top: -340px;
+    width: 180px;
+    height: 280px;
+  }
+
+  .join-existing-game{
+    left: -32px;
+  }
 }
 
