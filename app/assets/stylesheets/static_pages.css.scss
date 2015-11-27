@@ -30,6 +30,12 @@ body{
     width: 400px;
 
     #login-form {
+      /* all */
+      ::-webkit-input-placeholder { letter-spacing: 2.4px; }
+      ::-moz-placeholder { letter-spacing: 2.4px; } /* firefox 19+ */
+      :-ms-input-placeholder { letter-spacing: 2.4px; } /* ie */
+      input:-moz-placeholder { letter-spacing: 2.4px; }
+
       #login-btn{
         letter-spacing: 2.4px;
       }
@@ -48,4 +54,6 @@ body{
     }
   }
 }
+
+
 

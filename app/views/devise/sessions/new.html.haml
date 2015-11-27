@@ -1,6 +1,7 @@
 .login-section{'data-controller': params[:controller]}
-  %h1.wombattleships-header.text-align-center.margin-0-auto.margin-top-110px
-    Wombattleships
+  %h1.wombattleships-header.text-align-center.margin-0-auto.margin-top-110px.animate-in
+    =build_blinking_header.html_safe
+
   .login-wrapper.margin-0-auto{'data-controller': params[:controller], 'data-action': params[:action]}
     .login-form.margin-0-auto
       = form_for(resource, as: @user, url: session_path(@user), html: {id: 'login-form'}) do |f|

@@ -1,0 +1,31 @@
+span.blink-red-header {   
+  animation-duration: 1200ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  @keyframes blink {
+    from {
+      color: #2e829b;
+    }
+
+    to {
+      color: #bc0200;
+    }
+  }
+}
+
+span.blink-blue-header {   
+  animation-duration: 900ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  @keyframes blink {
+    from {
+      color: #bc0200;
+    }
+
+    to {
+      color: #2e829b;
+    }
+  }
+}
