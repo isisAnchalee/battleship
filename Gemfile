@@ -13,6 +13,7 @@ gem 'unicorn'
 gem 'turbolinks'
 gem 'devise'
 gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 
 group :production do
   gem 'pg',             '0.17.1'
