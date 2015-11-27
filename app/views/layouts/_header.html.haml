@@ -1,9 +1,9 @@
 - if current_user
   .header
+    .profile-image.pull-left
+      =image_tag(current_user.picture, class: 'img-circle img-half-size')
     .pull-left.margin-left-10{'data-controller': params[:controller]}
       %span.your-score
         Your Score: 0 Points
-      .profile-image
-        =image_tag(current_user.picture, class: 'img-circle')
     .pull-right.margin-right-10
       =link_to('Sign Out', users_sign_out_path)

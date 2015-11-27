@@ -8,6 +8,7 @@ Devise.setup do |config|
   config.omniauth :twitter, 'f3rbtZ4gqecb6Sj6LWvRRx38Z', 'iEdvtY7ymB89EFVyxVGPsuKhwLVpUbdqlx9M6hyDoA022AEaJq',
   callback_url: 'http://localhost:3000/users/auth/twitter/callback', scope: 'email', info_fields: 'email'
   
+  config.secret_key = 'd97eb07e57893caf33825e29e218287077850b8b563adb6e5a73d8e5f6c6ec02b38c10b92c8c16f768c61a1dc01a8d7e257ad2f504e52ea6c2dedc96732d34c4'
   config.sign_out_via = :get
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing

@@ -9,7 +9,7 @@ window.StaticGamePages = (function() {
   };
 
   function autoFocusNewGameInput(){
-    $('#wombat-img').click(function(e){
+    $('#wombat-img').click(function(){
       focusInput('#new-game-field');
     });
   };
