@@ -2,6 +2,18 @@
   margin: 0 auto;
 }
 
+.margin-top-50px{
+  margin-top: 100px;
+}
+
+.margin-top-neg-50{
+  margin-top: -50px;
+}
+
+.margin-bot-neg-50{
+  margin-bottom: 0px;
+}
+
 .text-align-center{
   text-align: center;
 }
@@ -12,4 +24,10 @@
 
 .display-inline{
   display: inline;
+}
+
+.img-half-size{
+  -moz-transform:scale(0.75);
+  -webkit-transform:scale(0.75);
+  transform:scale(0.75);
 }

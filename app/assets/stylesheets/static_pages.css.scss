@@ -3,6 +3,7 @@ $wombat-teal-blue   :#2e829b;
 $wombat-black       :#020202;
 $wombat-header-red  :#bc0200;
 $wombat-bg-grey     :#c9c9c9;
+$wombat-med-grey    :#a6a6a6;
 
 html {
   background-color: $wombat-bg-grey;
@@ -15,16 +16,28 @@ body{
   font-weight: 500;
 }
 
+h1{
+  font-family: 'Airborne Pilot';
+  font-size: 60px;
+}
+
 @font-face {
   font-family: 'Airborne Pilot';
   src: url('arbrnplt.ttf') format('truetype');
 }
 
+.header{
+  margin-top: -90px;
+}
+
+.input{
+  height: 33px;
+  width: 350px;
+  border: 1px solid $wombat-light-white;
+  background-color: $wombat-light-white;
+}
+
 [data-controller="devise/sessions"]{
-  .wombattleships-header{
-    font-family: 'Airborne Pilot';
-    font-size: 60px;
-  }
 
   .login-wrapper{
     width: 400px;
@@ -39,12 +52,6 @@ body{
       #login-btn{
         letter-spacing: 2.4px;
       }
-      .login-input{
-        height: 33px;
-        width: 350px;
-        border: 1px solid $wombat-light-white;
-        background-color: $wombat-light-white;
-      }
 
       .remember{
         margin-left: 230px;
@@ -55,5 +62,25 @@ body{
   }
 }
 
+[data-controller="games"]{
 
+  .your-score{
+    font-family: 'Airborne Pilot';
+    font-size: 14px;
+  }
+
+  .new-game-container{
+    text-align: center;
+    width: 450px;
+    height: 400px;
+    background-color: $wombat-med-grey;
+  }
+
+  .new-game-wrapper{
+    margin-top: -96px;
+    #new-game-btn{
+      margin-top: 15px;
+    }
+  }
+}
 

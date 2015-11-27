@@ -1,0 +1,18 @@
+= render partial: 'layouts/header'
+
+.static_index{'data-controller': params[:controller]}
+  %p.notice= notice
+  %p.alert= alert
+
+  .margin-top-50px
+    %h1.new-game-header.text-align-center.margin-bot-neg-50
+      Create New Game
+    .new-game-container.margin-0-auto
+      = image_tag('http://www.baybushwalkers.org.au/wilsons12/wombat.gif', class: 'img-half-size margin-top-neg-50')
+      .new-game-wrapper
+        = form_for(@game, as: @game, url: new_api_game_path(@game)) do |f|
+          .field
+            %br
+            = f.text_field :room_name, autofocus: true, class: 'input', placeholder: 'room name'
+          .actions
+            = f.submit 'Create Game', class: 'main-btn', id: 'new-game-btn'
