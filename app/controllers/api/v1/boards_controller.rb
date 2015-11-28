@@ -3,7 +3,8 @@ module Api
     class BoardsController < Api::V1::ApiController 
 
       def create
-        @board = Board.new(board_params)
+        @game = Game.find(params[:game_id])
+        @board = @game.first_player_board.build(board_params)
         render json: @board
       end
 

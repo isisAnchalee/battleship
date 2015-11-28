@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   devise :omniauthable, :omniauth_providers => [:facebook, :twitter]
   
   has_many :games
+  has_many :boards
 
   attr_accessor :login
 
@@ -19,6 +20,11 @@ class User < ActiveRecord::Base
 
   def email_required?
     false
+  end
+
+  def setup_boards(game)
+    board = Board.new({ game_id: game.id, user_id: id })
+    board.save!
   end
 
   def self.from_omniauth(auth)
@@ -37,41 +43,6 @@ class User < ActiveRecord::Base
       end
     else
       super
-    end
-  end
-
-  def update_picture(omniauth)
-    if omniauth['provider'] == 'twitter'
-        self.picture = omniauth['info']['image'].sub("_normal", "")
-    end
-  end
-
-  def portrait(size)
-    # Twitter
-    # mini (24x24)                                                                  
-    # normal (48x48)                                            
-    # bigger (73x73)                                                
-    # original (variable width x variable height)
-    if self.image.include? "twimg"
-        # determine filetype        
-        case 
-        when self.image.downcase.include?(".jpeg")
-            filetype = ".jpeg"
-        when self.image.downcase.include?(".jpg")
-            filetype = ".jpg"
-        when self.image.downcase.include?(".gif")
-            filetype = ".gif"
-        when self.image.downcase.include?(".png")
-            filetype = ".png"
-        else
-            raise "Unable to read filetype of Twitter image for User ##{self.id}"
-        end
-        # return requested size
-        if size == "original"
-            return self.image
-        else
-            return self.image.gsub(filetype, "_#{size}#{filetype}")
-        end
     end
   end
 

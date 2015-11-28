@@ -27,7 +27,7 @@ window.GamesIndex = (function() {
       var $this = $(this),
            $url = $this.data('url'),
             $id = $this.data('id');
-      sendAjaxRequest($url, handleSuccess, "POST")
+      sendAjaxRequest($url, handleSuccess, "PATCH")
     });
   };
 
@@ -46,7 +46,7 @@ window.GamesIndex = (function() {
     var path;
     var res = JSON.parse(data.responseText);
     path = res['start_game'] ? '/games/' + res.id : '/'
-    createFlashMessage('This game is full!');
+    createFlashMessage(res['message']);
   };
 
   function createFlashMessage(msg){

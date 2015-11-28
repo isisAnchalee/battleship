@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151128090923) do
+ActiveRecord::Schema.define(version: 20151128221832) do
 
   create_table "boards", force: :cascade do |t|
     t.integer "game_id",                 null: false
-    t.integer "player_id",               null: false
+    t.integer "user_id",                 null: false
     t.text    "board"
     t.integer "pieces_left", default: 0
   end
@@ -29,11 +29,6 @@ ActiveRecord::Schema.define(version: 20151128090923) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "full"
-  end
-
-  create_table "players", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "game_id", null: false
   end
 
   create_table "ships", force: :cascade do |t|

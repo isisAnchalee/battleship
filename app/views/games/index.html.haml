@@ -1,13 +1,14 @@
 .fake-flashes
 .margin-top-140{ 'data-controller': params[:controller], 'data-action': params[:action ]}
-  %h1.text-align-center.margin-bot-neg-1 Open Games
+  %h1.text-align-center.margin-bot-neg-1 All of the Games
   %table.table-thin.margin-0-auto
     %tr
       %th Room Name
       %th First Player
       %th Created At
+      %th Open?
     - @games.each do |game|
-      %tr{'data-id': "#{game.id}", 'data-url': "#{api_v1_game_games_join_game_path(game.id)}"}
+      %tr{'data-id': "#{game.id}", 'data-url': "#{api_v1_game_path(game.id)}"}
         %td
           #{game.room_name}
         %td
@@ -16,9 +17,7 @@
             #{'score:' + game.first_player.total_score}
         %td
           #{time_ago_in_words(game.created_at) + ' ago'}
-
+        %td
+          #{game.open?}
   .pagination-wrapper
     = paginate @games
-
-
-
