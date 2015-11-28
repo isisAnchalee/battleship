@@ -20,10 +20,10 @@ module Services
         end
 
         def render_feedback
-          render json: { 'piece_hit': self.class,
-                             'sound': 'splash!!!!',
-                            'health': @health,
-                              'sunk': @sunk }
+          { 'piece_hit': self.class,
+                'sound': 'splash!!!!',
+               'health': @health,
+                 'sunk': @sunk }
         end
 
         private

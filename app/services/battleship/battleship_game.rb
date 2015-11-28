@@ -13,17 +13,13 @@ module Services
         def initialize(options)
           @players = { first_player: Player.new(options),
                       second_player: Player.new }
-          @record_keeper = Services::RecordKeeper.new(record_keeper_params(options))
+          @record_keeper = options.fetch(:record_keeper)
           @maps = build_maps
           @current_player = :first_player
         end
 
         def add_second_player(user)
           @players[:second_player] = user
-        end
-
-        def place_ship
-          current_player
         end
 
         def game_over?

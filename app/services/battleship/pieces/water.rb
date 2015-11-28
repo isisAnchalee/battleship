@@ -11,8 +11,8 @@ module Services
         end
 
         def render_feedback
-          render json: { 'piece_hit': self.class,
-                             'sound': 'splash!!!!' }
+          { 'piece_hit': self.class,
+                'sound': 'splash!!!!' }
         end
       end
     end

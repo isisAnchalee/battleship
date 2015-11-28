@@ -13,9 +13,6 @@ module Services
         def initialize(options)
           super(options.merge(DEFAULTS))
         end
-        # def hit_ship 
-        #   super
-        # end
       end
     end
   end

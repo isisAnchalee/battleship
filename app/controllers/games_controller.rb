@@ -12,7 +12,7 @@ class GamesController < ApplicationController
   def create
     @game = Game.new(game_params)
     @game.first_player_id = current_user.id
-
+    
     if @game.save!
       render :show
     else
@@ -28,7 +28,6 @@ class GamesController < ApplicationController
 
   private
   def game_params
-    params.require(:game)
-      .permit(:first_player_id, :room_name)
+    params.require(:game).permit(:room_name)
   end
 end

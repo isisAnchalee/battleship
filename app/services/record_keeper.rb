@@ -7,7 +7,9 @@ module Services
     def initialize(options)
       @game_prefix = options.fetch(:game_prefix)
       @game_id = options.fetch(:game_id)
-      @current_user = :first_player
+      @first_player_id = options.fetch(:first_player_id)
+      @second_player_id = options.fetch(:second_player_id)
+      @current_player = options.fetch(:current_player)
     end
 
     def swap_move
@@ -24,12 +26,12 @@ module Services
     end
 
     def key
-      generate_redis_key(@game_prefix, @game_id, @current_user)
+      generate_redis_key(@game_prefix, @game_id, @current_player)
     end
-    
+
     private
-    def generate_redis_key(game, game_id, player)
-      "#{game}:#{game_id}:#{player}"
+    def generate_redis_key(game, game_id, player_id)
+      "#{game}:#{game_id}:#{player_id}"
     end
   end
 end

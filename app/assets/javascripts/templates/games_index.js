@@ -11,12 +11,27 @@ window.GamesIndex = (function() {
   function setupListeners(){
     toggleInScore();
     toggleOutScore();
+    joinGame();
   };
 
   function toggleInScore(){
     $namespace.find($('tr[data-id]')).mouseenter(function(e){
       var $toggleEl = $(this).find($('.score'))
       $toggleEl.fadeIn();
+    });
+  };
+
+  function joinGame(){
+    $namespace.find($('tr[data-id]')).click(function(e){
+      var $url = $(this).data('url');
+      $.ajax({
+        url : $url,
+        type: "POST",
+        dataType: 'json',
+        complete: function(data, resp) {
+          console.log(data, resp)
+        }
+      });
     });
   };
 

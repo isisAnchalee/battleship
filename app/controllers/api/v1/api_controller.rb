@@ -1,6 +1,6 @@
 module Api
-  module v1
-    class Api::ApiController < ApplicationController
+  module V1
+    class ApiController < ApplicationController
       before_action :authenticate_user!
       respond_to :json
     end

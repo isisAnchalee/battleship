@@ -8,12 +8,14 @@ Rails.application.routes.draw do
   end
 
   resources :games, only: [:create, :show, :index]
+
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"},
                    controllers: {omniauth_callbacks: "omniauth_callbacks"}
   
-  constraints subdomain: 'api' do
-    namespace :api, path: '/' do
+  namespace :api, path: '/' do
+    namespace :v1 do 
       resources :games, only: [:index, :new, :create, :show] do
+        post 'games/join_game' => 'games#join_game'
         resources :players, only: [:new, :create, :index]
       end
     end

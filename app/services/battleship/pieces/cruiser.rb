@@ -5,7 +5,7 @@ module Services
     module Battleship
       class Cruiser < Ship
 
-       DEFAULTS = {
+        DEFAULTS = {
           size: 3,
           type: self.class
         }
