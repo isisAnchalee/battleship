@@ -14,6 +14,7 @@ class User < ActiveRecord::Base
 
   def total_score
     return 0.to_s if score.nil?
+    score.to_s
   end
 
   def email_required?

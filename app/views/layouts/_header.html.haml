@@ -4,7 +4,7 @@
       =image_tag(current_user.picture, class: 'img-circle img-half-size')
     .pull-left.margin-left-10{'data-controller': params[:controller]}
       %span.your-score
-        Your Score: 0 Points
+        Your Score: #{current_user.total_score} Points
     .pull-right.margin-right-10
       =link_to('Home', root_path) + " | "
       =link_to('Sign Out', users_sign_out_path)
