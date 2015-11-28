@@ -1,2 +1,18 @@
-.pagination-wrapper
-  = paginate @games
+.margin-top-140
+  %h1.text-align-center.margin-bot-neg-1 Open Games
+  %table.table-thin.margin-0-auto
+    %tr
+      %th Room Name
+      %th First Player
+      %th Created At
+    - @games.each do |game|
+      %tr
+        %td
+          #{game.room_name}
+        %td
+          #{game.first_player_id}
+        %td
+          #{game.created_at}
+
+  .pagination-wrapper
+    = paginate @games
