@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     namespace :v1 do 
       resources :games, only: [:index, :new, :create, :show] do
         post 'games/join_game' => 'games#join_game'
+        resources :boards, only: [:create, :show]
         resources :players, only: [:new, :create, :index]
       end
     end

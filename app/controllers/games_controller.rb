@@ -1,4 +1,6 @@
 class GamesController < ApplicationController
+  after_filter :build_game_board, only: :create
+
   def new
     @game = Game.new
     render :new
@@ -29,5 +31,15 @@ class GamesController < ApplicationController
   private
   def game_params
     params.require(:game).permit(:room_name)
+  end
+
+  def build_game_board
+    @board = Board.new({ player_id: current_user.id,
+                         game_id: @game.id })
+    if @board.save!
+      flash[:notice] = 'success!!!!'
+    else
+      flash.now[:errors] = @board.errors.full_messages
+    end
   end
 end

@@ -4,18 +4,23 @@ module Api
 
       def join_game
         @game = Game.find(params[:game_id])
-        render json: { resp: 'game is full!' } and return if @game.is_filled?
         if @game.first_player_id == current_user.id
-          render json: { resp: 'cannot join your own game'} and return 
+          render json: { resp: 'cannot join your own game' } and return 
         end
+        render json: { resp: 'game is full!' } and return if @game.is_filled?
+        add_user_to_game
+      end
+
+      private
+
+      def add_user_to_game
         @game.second_player_id = current_user.id
         if @game.save!
-          render json: {resp: 'success!!!'}
+          render json: { resp: @game, start_game: true, id: @game.id }
         else
           render json: { error: @game.errors.full_messages }
         end
       end
-
     end
   end
 end

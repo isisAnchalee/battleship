@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151128075618) do
+ActiveRecord::Schema.define(version: 20151128090923) do
 
   create_table "boards", force: :cascade do |t|
-    t.integer "game_id",   null: false
-    t.integer "player_id", null: false
+    t.integer "game_id",                 null: false
+    t.integer "player_id",               null: false
     t.text    "board"
+    t.integer "pieces_left", default: 0
   end
 
   add_index "boards", ["game_id"], name: "index_boards_on_game_id"
