@@ -31,12 +31,16 @@ table {
       font-size: 13px;
     }
     tr {
+      transition: 0.4s ease;
+      &:hover{
+        background-color: #f8f8f8;
+        cursor: pointer;
+      }
       text-align: center;
       padding: 20px;
       &:first-child {
         td {
           border-top: 0;
-
           border-top-radius: 5px;
         }
       }
@@ -44,31 +48,11 @@ table {
       &:last-child {
         td {
           border-bottom: 0;
-
           border-bottom-radius: 5px;
         }
       }
-
       td {
         padding: 10px;
-
-      }
-
-      td.time, td.cell-right {
-        text-align: right;
-      }
-    }
-  }
-
-  &.table-simple {
-    border: 0;
-    margin-bottom: 5px;
-
-    tr {
-      td,
-      td:last-child {
-        border: 0;
-        padding: 0 20px;
       }
     }
   }

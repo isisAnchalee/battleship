@@ -109,12 +109,16 @@ a {
 
 /** positioning/margins/padding **/
 
+.margin-top-5{
+  margin-top: 5px;
+}
+
 .margin-0-auto{
   margin: 0 auto;
 }
 
-.margin-top-50px{
-  margin-top: 150px;
+.margin-top-120{
+  margin-top: 125px;
 }
 
 .margin-top-10{
@@ -123,14 +127,6 @@ a {
 
 .margin-bot-neg-1{
   margin-bottom: -1px;
-}
-
-// .margin-bot-neg-50{
-//   margin-bottom: 0px;
-// }
-
-.margin-top-50{
-  margin-top: 50px;
 }
 
 .margin-top-110px{
@@ -157,6 +153,9 @@ a {
   display: inline;
 }
 
+.display-none{
+  display: none;
+}
 /** images **/
 
 .img-half-size{

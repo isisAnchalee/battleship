@@ -1,17 +1,20 @@
 class User < ActiveRecord::Base
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
 
   devise :omniauthable, :omniauth_providers => [:facebook, :twitter]
   
-  has_one :player
+  has_many :games
+
   attr_accessor :login
+
+  def username
+    self.email || self.username || 'butts'
+  end
+
+  def total_score
+    return 0.to_s if score.nil?
+  end
 
   def email_required?
     false
@@ -22,8 +25,6 @@ class User < ActiveRecord::Base
       user.picture = auth.info.image
       user.email = auth.info.nickname
       user.password = Devise.friendly_token[0,20]
-      # user.name = auth.info.name   # assuming the user model has a name
-      # user.image = auth.info.image # assuming the user model has an image
     end
   end
 

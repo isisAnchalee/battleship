@@ -1,4 +1,4 @@
-.margin-top-140
+.margin-top-140{ 'data-controller': params[:controller], 'data-action': params[:action ]}
   %h1.text-align-center.margin-bot-neg-1 Open Games
   %table.table-thin.margin-0-auto
     %tr
@@ -6,13 +6,15 @@
       %th First Player
       %th Created At
     - @games.each do |game|
-      %tr
+      %tr{'data-id': "#{game.id}"}
         %td
           #{game.room_name}
         %td
-          #{game.first_player_id}
+          #{game.first_player.username}
+          .display-inline.score.display-none.margin-top-5
+            #{'score:' + game.first_player.total_score}
         %td
-          #{game.created_at}
+          #{time_ago_in_words(game.created_at) + ' ago'}
 
   .pagination-wrapper
     = paginate @games

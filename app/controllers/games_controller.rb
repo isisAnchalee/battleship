@@ -5,7 +5,7 @@ class GamesController < ApplicationController
   end
 
   def index
-    @games = Game.order('created_at desc').page(params[:page]).per(2)
+    @games = Game.order('created_at desc').page(params[:page]).per(10)
     render :index
   end
 

@@ -15,6 +15,7 @@
 //= require_tree .
 
 $(document).ready(function(){
-  StaticGamePages.initialize();
+  GamesNew.initialize();
+  GamesIndex.initialize();
 });
 
