@@ -1,0 +1,10 @@
+production:
+  host:      localhost
+  port:      6380
+  database:  0
+  namespace: production
+development:
+  host:      localhost
+  port:      6380
+  database:  1
+  namespace: development

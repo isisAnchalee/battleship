@@ -16,7 +16,11 @@ gem 'devise'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'font-awesome-rails'
+gem 'kaminari'
+gem 'redis-store'
+gem 'redis'
 gem 'redis-rails'
+gem 'redis-namespace'
 
 group :production do
   gem 'pg',             '0.17.1'

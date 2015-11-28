@@ -9,7 +9,7 @@
       .inner-game-container
         = image_tag('http://www.baybushwalkers.org.au/wilsons12/wombat.gif', class: 'img-half-size margin-top-neg-50 cursor-pointer', id: 'wombat-img')
         .new-game-wrapper
-          = form_for(@game, as: @game, url: new_api_game_path(@game)) do |f|
+          = form_for(@game, as: @game, url: games_path(@game)) do |f|
             .field.new-game
               %br
               = f.text_field :room_name, autofocus: true, class: 'input', id:'new-game-field', placeholder: 'room name'
