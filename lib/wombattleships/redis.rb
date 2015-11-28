@@ -27,16 +27,4 @@ module Wombattleship::Redis
   def self.included(base)
     base.extend(Wombattleship::Redis)
   end
-
-  private
-  # @param feature_name [String] a required feature name to namespace your redis key
-  # @param identifier [String] a required unique identifier for the key
-  # @example when mixed into the User model
-  #   generate_key('first_player', '200')
-  #   # => 'game:first_player:200'
-
-  def generate_redis_key(feature_name, identifier)
-    klass = self.is_a?(Class) ? self.to_s.underscore : self.class.name.underscore
-    "#{klass}:#{feature_name}:#{identifier}"
-  end
 end

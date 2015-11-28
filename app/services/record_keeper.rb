@@ -2,50 +2,34 @@ module Services
   class RecordKeeper
     include Wombattleships::Redis
     
+    TTL = 86400
+
     def initialize(options)
       @game_prefix = options.fetch(:game_prefix)
       @game_id = options.fetch(:game_id)
+      @current_user = :first_player
     end
 
-    # Increments number of password-reset emails that have been requested per day
-    def increment
-      redis.setex(key, TTL, value)
+    def swap_move
+      @current_user = current_user == :first_player ? :second_player : :first_player
     end
 
-    # @return [Fixnum] number of keys deleted
-    # Delete failed_attempt key for user after successful request
-    def reset
-      redis.del(key)
+    # Sets the new board in cache with 24 hour expiration time
+    def store_move(board)
+      redis.setex(key, TTL, board)
     end
 
-    # @return [Fixnum] count of user invalid attempts from Redis
-    def failed_attempts
-      find_value || 0
-    end
-
-    # @return [Boolean] true if rate limit for each email has been exceeded
-    def rate_limit_exceeded?
-      failed_attempts >= @max_attempts
-    end
-
-    # @return [Time] how long until user can request more password reset emails
-    def locked_until
-      distance_of_time_in_words(get_ttl)
-    end
-
-    # @return [Integer] time until stored value expires
-    def get_ttl
-      redis.ttl(key)
-    end
-
-    private
-
-    def find_value
-      redis.get(key).to_i
+    def get_board
+      redis.get(key)
     end
 
     def key
-      generate_redis_key(@target, @user.email)
+      generate_redis_key(@game_prefix, @game_id, @current_user)
+    end
+    
+    private
+    def generate_redis_key(game, game_id, player)
+      "#{game}:#{game_id}:#{player}"
     end
   end
 end

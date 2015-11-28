@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151128013103) do
+ActiveRecord::Schema.define(version: 20151128034102) do
 
   create_table "games", force: :cascade do |t|
     t.integer  "first_player_id",  null: false
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20151128013103) do
     t.string   "room_name",        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "full"
   end
 
   create_table "users", force: :cascade do |t|
