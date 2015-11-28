@@ -1,9 +1,9 @@
 window.GamesIndex = (function() {
-  var namespace;
+  var $namespace;
 
   function initialize(){
-    namespace = $("[data-controller='games'][data-action='index']");
-    if (namespace.length > 0) {
+    $namespace = $("[data-controller='games'][data-action='index']");
+    if ($namespace.length > 0) {
       setupListeners();
     }
   };
@@ -14,14 +14,14 @@ window.GamesIndex = (function() {
   };
 
   function toggleInScore(){
-    namespace.find($('tr[data-id]')).mouseenter(function(e){
+    $namespace.find($('tr[data-id]')).mouseenter(function(e){
       var $toggleEl = $(this).find($('.score'))
       $toggleEl.fadeIn();
     });
   };
 
   function toggleOutScore(){
-    namespace.find($('tr[data-id]')).mouseleave(function(e){
+    $namespace.find($('tr[data-id]')).mouseleave(function(e){
       var $toggleEl = $(this).find($('.score'))
       $toggleEl.fadeOut();
     });
