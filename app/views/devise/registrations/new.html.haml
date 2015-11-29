@@ -1,0 +1,23 @@
+%h2 Sign up
+= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter)
+= form_for(@user, url: registration_path(@user)) do |f|
+  = devise_error_messages!
+  .field
+    = f.label :email
+    %br
+    = f.email_field :email, autofocus: true, id: 'email-field'
+  .field
+    = f.label :password
+    - if @minimum_password_length
+      %em
+        (#{@minimum_password_length} characters minimum)
+    %br
+    = f.password_field :password, autocomplete: "off", id: 'pw-field'
+  .field
+    = f.label :password_confirmation
+    %br
+    = f.password_field :password_confirmation, autocomplete: "off"
+  .actions
+    = f.submit "Sign up"
+= render "devise/shared/links"
+
