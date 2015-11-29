@@ -16,13 +16,4 @@ RSpec.describe User, type: :model do
     it { should have_many :first_players }
     it { should have_many :second_players }
   end
-
-  context "devise" do
-
-    it "can find user by email" do
-      warden_conditions = { email: user.email.upcase! }
-      authenticated = User.find_for_database_authentication(warden_conditions)
-      expect(authenticated).to eq user
-    end
-  end
 end
