@@ -14,7 +14,7 @@ class Game < ActiveRecord::Base
   end
 
   def open?
-    !is_filled?
+    !is_full?
   end
 
   def players

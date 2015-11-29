@@ -3,9 +3,7 @@ module Services
     module Battleship
       class WombattleshipLogic
 
-        GAME_NAME = 'Wombattleships'
-
-        #
+        attr_accessor :board
         # this game object keeps track of the state 
         # of the board and provides an interface
         # for placing ships, playing moves and checking
@@ -23,13 +21,13 @@ module Services
         def make_move(move)
           case @game_state
           when 'waiting'
-            return 'waiting on second player'
+           build_response 'waiting on second player'
           when 'setup'
-            return place_ship(move)
+            place_ship(move)
           when 'playing'
-            return play_move(move)
+            play_move(move)
           when 'over'
-            return 'game over! no moves!'
+            build_response 'game over! no moves!'
           end
         end
 
@@ -42,6 +40,7 @@ module Services
           move[ship_deltas].each do |row, col|
             @board[row][col] = ship_sym
           end
+          build_response('success', [ @board ])
         end
 
         # param move [Object]
@@ -50,7 +49,7 @@ module Services
           if valid_move?(move)
             place_move_on_board(move) 
           else 
-            return 'Not a valid move!!!'
+            build_response 'Not a valid move!!!'
           end
         end
         
@@ -61,7 +60,7 @@ module Services
           row, col = move[pos]
           square = @board[row][col]
           @board[row][col] = 'X'
-          [@board, square]
+          build_response('success', [ @board, square ])
         end
 
         # checks if board contains any 
@@ -84,6 +83,11 @@ module Services
 
         def parse_board(board)
           JSON.parse(board)
+        end
+
+        # standardized response format
+        def build_response(str, board = '')
+          { str: str, board: board }
         end
       end
     end
