@@ -1,22 +1,29 @@
-# RSpec.feature 'Games Controller', :type => :feature do
-#   describe 'the creation process' do
-#     let(:user){ FactoryGirl.create(:user) }
+RSpec.feature 'Games Controller', :type => :feature do
+  describe 'the creation process' do
+    let(:user){ FactoryGirl.create(:user) }
     
-#     scenario 'With user logged in' do
-      
-#       # visit 'users/login'
-#       # fill_in 'login-email', with: user.email
-#       # fill_in 'login-pw', with: user.password
-#       # click_button 'Log in'
-#       # save_and_open_page
-#       # expect(page).to have_content 'CREATE NEW GAME'
-#     end
+    scenario 'Without user logged in' do
+      visit '/'
+      expect(page).to have_content 'Sign up'
+    end
 
-#     scenario 'Without user logged in' do
-#       visit '/'
-#       fill_in 'room_name', with: 'TESTING!!!!!'
-#       # click_button 'Log in'
-#       # expect(page).to have_content 'Sign up'
-#     end
-#   end
-# end
+    scenario 'Creating new game' do 
+      visit 'users/sign_up'
+      fill_in 'email-field', with: 'testing@test.test'
+      fill_in 'pw-field', with: 'test'
+      click_button 'Sign up'
+      fill_in 'new-game-field', with: 'test room'
+      click_button 'Create New Game'
+      expect(page).to have_content 'test room'
+    end
+
+    scenario 'Visiting games index' do 
+      visit 'users/sign_up'
+      fill_in 'email-field', with: 'testing@test.test'
+      fill_in 'pw-field', with: 'test'
+      click_button 'Sign up'
+      click_link 'Join Existing'
+      expect(page).to have_content 'Games'
+    end
+  end
+end

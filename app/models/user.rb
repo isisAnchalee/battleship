@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
   validates :email, presence: :true
   attr_accessor :login
   attr_accessor :password
-  
+
   def total_score
     score.nil? ? "0" : "#{score}"
   end
@@ -40,6 +40,10 @@ class User < ActiveRecord::Base
     end
   end
   
+  def username
+    email
+  end
+
   def email_required?
     false
   end

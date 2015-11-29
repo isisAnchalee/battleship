@@ -8,7 +8,8 @@ class Game < ActiveRecord::Base
   validates :state, inclusion: { in: ['waiting', 'setup', 'playing', 'over'] }
   
   STATUSES = ['waiting', 'setup', 'playing', 'over']
-  
+  PLACEHOLDER_ID = 0
+
   def is_full?
     second_player_id != 0
   end
