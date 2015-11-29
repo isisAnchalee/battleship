@@ -1,0 +1,23 @@
+%br/
+.row
+  .col-md-12
+    %a.btn.btn-primary{:href => "#/users/new"} Create a user
+    %h3.block Users
+    %table.table.table-striped
+      %tr
+        %th First Name
+        %th Last Name
+        %th Email
+        %th Phone
+        %th
+      %tr{"ng-hide" => "games.length"}
+        %td{:colspan => "5"} No users found, Please create one.
+      %tr{"ng-repeat" => "user in users", "ng-show" => "users.length"}
+        %td {{{game.room_name}}
+        %td {{game.first_player.username}}
+        %td {{game.created_at}}
+        %td {{game.open?}}
+        %td
+          %a{:href => "#/games/{{game.id}}/edit"} Edit
+          |
+          %a{:href => "", "ng-click" => "deleteGame(game.id)"} Remove

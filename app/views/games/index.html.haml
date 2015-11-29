@@ -8,7 +8,7 @@
       %th Created At
       %th Open?
     - @games.each do |game|
-      %tr{'data-id': "#{game.id}", 'data-url': "#{api_v1_game_path(game.id)}"}
+      %tr{'data-id': "#{game.id}", 'data-url': "#{game_path(game.id)}"}
         %td
           #{game.room_name}
         %td

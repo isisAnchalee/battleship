@@ -1,4 +1,6 @@
 class GamesController < ApplicationController
+  before_action :ensure_players_belong_in_game, only: :show
+
   def new
     @game = Game.new
     render :new
@@ -9,10 +11,12 @@ class GamesController < ApplicationController
     render :index
   end
 
+  # create game with placeholder player
+  # until human player joins
   def create
     @game = Game.new(game_params)
     @game.first_player_id = current_user.id
-    @game.second_player_id = 0
+    @game.second_player_id = Game::PLACEHOLDER_ID
     if @game.save!
       render :show
     else

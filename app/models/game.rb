@@ -14,7 +14,7 @@ class Game < ActiveRecord::Base
   # include ActiveModel::Validations
   # validates_with PlayerValidater
   
-  def is_filled?
+  def is_full?
     second_player_id != 0
   end
 
@@ -22,15 +22,11 @@ class Game < ActiveRecord::Base
     !is_filled?
   end
 
-  def over?
-    first_player_board.over? || second_player_board.over?
-  end
-
-  def unique_players
-    first_player_id != second_player_id
-  end
-
   def players
     [first_player, second_player]
+  end
+
+  def player_ids
+    [first_player_id, second_player_id]
   end
 end

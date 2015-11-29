@@ -46,7 +46,6 @@ window.GamesIndex = (function() {
     var path;
     var res = JSON.parse(data.responseText);
     path = res['start_game'] ? '/games/' + res.id : '/'
-    createFlashMessage(res['message']);
   };
 
   function createFlashMessage(msg){

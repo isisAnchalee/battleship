@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151128221832) do
+ActiveRecord::Schema.define(version: 20151129021314) do
 
   create_table "boards", force: :cascade do |t|
     t.integer "game_id",                 null: false
@@ -23,12 +23,13 @@ ActiveRecord::Schema.define(version: 20151128221832) do
   add_index "boards", ["game_id"], name: "index_boards_on_game_id"
 
   create_table "games", force: :cascade do |t|
-    t.integer  "first_player_id",  null: false
+    t.integer  "first_player_id",                      null: false
     t.integer  "second_player_id"
-    t.string   "room_name",        null: false
+    t.string   "room_name",                            null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "full"
+    t.string   "state",            default: "waiting"
   end
 
   create_table "ships", force: :cascade do |t|

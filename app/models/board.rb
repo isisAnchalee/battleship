@@ -1,11 +1,13 @@
 class Board < ActiveRecord::Base
+  serialize :board
+  
   belongs_to :user
   belongs_to :game
   has_many :ships
 
   SHIPS = [ :cruiser, :aircraft_carrier, :battleship, :destroyer]
 
-  def over?
-    pieces_left == 0
+  def pieces_left?
+    pieces_left > 0
   end
 end

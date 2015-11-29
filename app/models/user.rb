@@ -8,29 +8,24 @@ class User < ActiveRecord::Base
   has_many :games
   has_many :first_player_games, class_name: 'Game', foreign_key: 'first_player_id'
   has_many :second_player_games, class_name: 'Game', foreign_key: 'second_player_id'
-  has_many :first_players, through: :first_player_games, foreign_key: 'first_player_id'
-  has_many :second_players, through: :second_player_games, foreign_key: 'second_player_id'
+  has_many :first_players, through: :first_player_games
+  has_many :second_players, through: :second_player_games
   has_many :first_player_board, through: :first_players , source: :games
   has_many :second_player_board, through: :second_players, source: :games
 
   attr_accessor :login
 
   def username
-    self.email || self.username || 'butts'
+    self.email || self.username
   end
 
   def total_score
-    return 0.to_s if score.nil?
-    score.to_s
+    return "0" if score.nil?
+    "#{score}"
   end
 
   def email_required?
     false
-  end
-
-  def setup_boards(game)
-    board = Board.new({ game_id: game.id, user_id: id })
-    board.save!
   end
 
   def self.from_omniauth(auth)

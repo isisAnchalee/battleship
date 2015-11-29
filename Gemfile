@@ -21,6 +21,8 @@ gem 'redis-store'
 gem 'redis'
 gem 'redis-rails'
 gem 'redis-namespace'
+gem 'angularjs-rails'
+gem 'angular-ui-bootstrap-rails' 
 
 group :production do
   gem 'pg',             '0.17.1'
