@@ -8,18 +8,24 @@ module Api
       # after second official player found
       def update
         @game = Game.find(params[:id])
-        render_unable_to_join if @game.first_player_id == @game.second_player_id
-        render_game_is_full if @game.is_full?
+        handle_errors
         @game.second_player_id = current_user.id 
         @game.state = 'setup'
         @game.save! ? join_game : render_errors
       end
 
+      # used to trigger board status change
+      def update_status
+        @game = Game.find(params[:id])
+        @game.update_status(params[:status_code])
+        render json: { resp: @game }
+      end
+
       private
       def setup_boards
-        @game.players.each do |player|
+        @game.player_ids.each do |player_id|
           Services::BoardFactory.new({ game_id: @game.id,
-                                       user_id: player.id }).build_board
+                                       user_id: player_id }).build_board
         end
       end
 
@@ -33,6 +39,11 @@ module Api
 
       def render_message(msg)
         render json: { message: msg } and return
+      end
+
+      def handle_errors
+        render_unable_to_join if @game.first_player_id == @game.second_player_id
+        render_game_is_full if @game.is_full?
       end
 
       def join_game

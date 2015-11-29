@@ -15,7 +15,7 @@ module Services
           @game_id = options.fetch(:game_id)
           @user_id = options.fetch(:user_id)
           @game_state = options.fetch(:game_state)
-          @board = parse_grid(options.fetch(:board))
+          @board = parse_board(options.fetch(:board))
         end
 
         # router for the type of move
@@ -82,8 +82,8 @@ module Services
           n >= 0 && n < 10
         end
 
-        def parse_grid
-          @board_state = JSON.parse(@board_state)
+        def parse_board(board)
+          JSON.parse(board)
         end
       end
     end

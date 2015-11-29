@@ -9,13 +9,14 @@ Rails.application.routes.draw do
 
   resources :games, only: [:create, :show, :index]
 
-  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"},
-                   controllers: {omniauth_callbacks: "omniauth_callbacks"}
+  devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout' },
+                   controllers: { omniauth_callbacks: 'omniauth_callbacks' }
   
   namespace :api, path: '/' do
     namespace :v1 do 
       resources :games, only: [:index, :new, :create, :show, :update] do
         resources :boards, only: [:create, :show]
+        put '/update_status/:status_code', to: 'api/v1/games#update_status'
       end
     end
   end

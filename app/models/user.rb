@@ -20,12 +20,7 @@ class User < ActiveRecord::Base
   end
 
   def total_score
-    return "0" if score.nil?
-    "#{score}"
-  end
-
-  def email_required?
-    false
+    score.nil? ? "0" : "#{score}"
   end
 
   def self.from_omniauth(auth)
@@ -45,6 +40,10 @@ class User < ActiveRecord::Base
     else
       super
     end
+  end
+  
+  def email_required?
+    false
   end
 
   def password_required?
