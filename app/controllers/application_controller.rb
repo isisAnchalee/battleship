@@ -4,6 +4,10 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   helper_method :current_user
 
+  def ensure_players_belong_in_game
+    @game && @game.player_ids.include?(params[:user_id])
+  end
+
   def new_session_path(scope)
     new_user_session_path
   end

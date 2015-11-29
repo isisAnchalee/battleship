@@ -4,20 +4,17 @@ class User < ActiveRecord::Base
 
   devise :omniauthable, :omniauth_providers => [:facebook, :twitter]
   
-  has_many :boards
-  has_many :games
-  has_many :first_player_games, class_name: 'Game', foreign_key: 'first_player_id'
-  has_many :second_player_games, class_name: 'Game', foreign_key: 'second_player_id'
-  has_many :first_players, through: :first_player_games
-  has_many :second_players, through: :second_player_games
-  has_many :first_player_board, through: :first_players , source: :games
-  has_many :second_player_board, through: :second_players, source: :games
+  has_many :boards, dependent: :destroy
+  has_many :games, dependent: :destroy
+  has_many :first_player_games, class_name: 'Game', foreign_key: 'first_player_id', dependent: :destroy
+  has_many :second_player_games, class_name: 'Game', foreign_key: 'second_player_id', dependent: :destroy
+  has_many :first_players, through: :first_player_games, dependent: :destroy
+  has_many :second_players, through: :second_player_games, dependent: :destroy
+  has_many :first_player_board, through: :first_players , source: :games, dependent: :destroy
+  has_many :second_player_board, through: :second_players, source: :games, dependent: :destroy
 
+  validates :email, presence: :true
   attr_accessor :login
-
-  def username
-    self.email || self.username
-  end
 
   def total_score
     score.nil? ? "0" : "#{score}"

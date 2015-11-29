@@ -1,7 +1,5 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
-  config.cache_store = :redis_store, "redis://localhost:6379/1/wombattleships"
   # config.action_controller.perform_caching = true
 
   # In the development environment your application's code is reloaded on

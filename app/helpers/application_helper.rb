@@ -1,4 +1,7 @@
 module ApplicationHelper
+  def ensure_players_belong_in_game
+    @game.player_ids.include?(params[:user_id])
+  end
 
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -21,5 +24,9 @@ module ApplicationHelper
 
   def fa_icon_tag(icon_name, classes = nil)
     content_tag(:i, nil, :class => "fa fa-#{icon_name} #{classes}")
+  end
+
+  private
+  def render_unauthorized
   end
 end
