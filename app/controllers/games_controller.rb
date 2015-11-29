@@ -25,6 +25,17 @@ class GamesController < ApplicationController
     end
   end
 
+  def update
+    @game = Game.find(params[:id])
+    @game.second_player_id = current_user.id 
+    @game.state = 'setup'
+    if @game.save!
+      render :show
+    else 
+      render @game.errors.full_messages
+    end
+  end
+
   def show
     @game = Game.find(params[:id])
     render :show

@@ -22,12 +22,8 @@ window.GamesIndex = (function() {
   };
 
   function joinGame(){
-    var path = ''
     $namespace.find($('tr[data-id]')).click(function(e){
-      var $this = $(this),
-           $url = $this.data('url'),
-            $id = $this.data('id');
-      sendAjaxRequest($url, handleSuccess, "PATCH")
+      $(this).find($('form')).submit();
     });
   };
 
@@ -45,7 +41,7 @@ window.GamesIndex = (function() {
   function handleSuccess(data){
     var path;
     var res = JSON.parse(data.responseText);
-    path = res['start_game'] ? '/games/' + res.id : '/'
+    path = res['start_game'] ? '/games/' + res.id : '/';
   };
 
   function createFlashMessage(msg){

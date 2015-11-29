@@ -4,11 +4,11 @@ module Services
       class WombattleshipLogic
 
         attr_accessor :board
+        attr_reader :game_state, :game_id, :user_id
         # this game object keeps track of the state 
         # of the board and provides an interface
         # for placing ships, playing moves and checking
         # if the game is over.
-        #
         def initialize(options)
           @game_id = options.fetch(:game_id)
           @user_id = options.fetch(:user_id)
@@ -87,7 +87,10 @@ module Services
 
         # standardized response format
         def build_response(str, board = '')
-          { str: str, board: board }
+          { game_id: @game.id,
+            user_id: @user.id,
+              board: board,
+                str: str }
         end
       end
     end
