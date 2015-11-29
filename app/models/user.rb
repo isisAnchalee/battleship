@@ -4,8 +4,14 @@ class User < ActiveRecord::Base
 
   devise :omniauthable, :omniauth_providers => [:facebook, :twitter]
   
-  has_many :games
   has_many :boards
+  has_many :games
+  has_many :first_player_games, class_name: 'Game', foreign_key: 'first_player_id'
+  has_many :second_player_games, class_name: 'Game', foreign_key: 'second_player_id'
+  has_many :first_players, through: :first_player_games, foreign_key: 'first_player_id'
+  has_many :second_players, through: :second_player_games, foreign_key: 'second_player_id'
+  has_many :first_player_board, through: :first_players , source: :games
+  has_many :second_player_board, through: :second_players, source: :games
 
   attr_accessor :login
 

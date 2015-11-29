@@ -29,7 +29,7 @@ module Api
       def setup_boards
         @game.players.each do |player|
           Services::BoardFactory.new({ game_id: @game.id,
-                                     user_id: player.id}).build_board
+                                       user_id: player.id}).build_board
         end
       end
     end
