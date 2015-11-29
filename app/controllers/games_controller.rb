@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_action :ensure_players_belong_in_game, only: :show
+  # before_action :ensure_players_belong_in_game, only: :show
 
   def new
     @game = Game.new

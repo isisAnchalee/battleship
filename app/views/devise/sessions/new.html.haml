@@ -7,10 +7,10 @@
       = form_for(resource, as: @user, url: session_path(@user), html: {id: 'login-form'}) do |f|
         .field
           %br
-          = f.email_field :email, autofocus: true, class: 'input', placeholder: 'email'
+          = f.email_field :email, autofocus: true, class: 'input', placeholder: 'email', id:'login-email'
         .field
           %br
-          = f.password_field :password, autocomplete: 'off', class: 'input', placeholder: 'password'
+          = f.password_field :password, autocomplete: 'off', class: 'input', placeholder: 'password', id: 'login-pw'
         - if devise_mapping.rememberable?
           .field.remember
             = f.check_box :remember_me

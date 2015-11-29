@@ -32,6 +32,7 @@ group :development, :test do
   gem 'simplecov-rcov', require: false
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
+  gem 'launchy'
   gem 'pry'
   gem 'rspec-rails', '~> 3.0'
 end

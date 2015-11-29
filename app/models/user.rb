@@ -15,7 +15,8 @@ class User < ActiveRecord::Base
 
   validates :email, presence: :true
   attr_accessor :login
-
+  attr_accessor :password
+  
   def total_score
     score.nil? ? "0" : "#{score}"
   end
