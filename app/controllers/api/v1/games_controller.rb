@@ -1,7 +1,7 @@
 module Api
   module V1
     class GamesController < Api::V1::ApiController 
-      before_action :ensure_players_belong_in_game, only:[ :show, :update ]
+      # before_action :ensure_players_belong_in_game, only:[ :show, :update ]
 
       after_action :setup_boards, only: :update
 
@@ -31,7 +31,7 @@ module Api
       end
 
       def feedback_factory(msg, status = :ok, start_game = true, custom = '')
-        Services::BoardFactory.new({ msg: msg, status: status,
+        Services::RenderFeedack.new({ msg: msg, status: status,
                               start_game: start_game, custom: custom }).render_message
       end
 
@@ -42,7 +42,7 @@ module Api
       end
 
       def join_game
-        feedback_factory(:joined_game).render_message
+        feedback_factory(:join_game).render_message
       end
 
       def render_game_errors

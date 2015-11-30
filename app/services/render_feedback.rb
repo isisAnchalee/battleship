@@ -10,7 +10,7 @@ module Services
 
     # returns game api feedback
     def initialize(options)
-      @msg = options.fetch(:message)
+      @msg = options.fetch(:msg)
       @status = options.fetch(:status, :ok)
       @start_game = options.fetch(:start_game, false)
       @custom = options.fetch(:custom, '')

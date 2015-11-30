@@ -14,8 +14,8 @@ Rails.application.routes.draw do
   
   namespace :api, path: '/' do
     namespace :v1 do 
-      resources :games, only: [:index, :new, :create, :show, :update] do
-        resources :boards, only: [:create, :show]
+      resources :games, only: [:update] do
+        resources :boards, only: [:create, :show, :show, :update]
         put '/update_status/:status_code', to: 'api/v1/games#update_status'
       end
     end

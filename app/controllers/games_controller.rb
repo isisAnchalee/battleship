@@ -16,8 +16,7 @@ class GamesController < ApplicationController
   # until human player joins
   def create
     @game = Game.new(game_params)
-    @game.first_player_id = current_user.id
-    @game.second_player_id = Game::PLACEHOLDER_ID
+    setup_game_players
     if @game.save
       render :show
     else
@@ -57,5 +56,11 @@ class GamesController < ApplicationController
       Services::BoardFactory.new({ game_id: @game.id,
                                    user_id: player_id }).build_board
     end
+  end
+
+  def setup_game_players
+    @game.first_player_id = current_user.id
+    @game.second_player_id = Game::PLACEHOLDER_ID
+    @game.current_user_id = current_user.id
   end
 end
