@@ -5,6 +5,9 @@ class Game < ActiveRecord::Base
   has_one :first_player_board, class_name: 'Board', through: :first_player, source: :first_player_board
   has_one :second_player_board, class_name: 'Board', through: :second_player, source: :second_player_board
   
+  scope :open_games, -> (id, fid) { where("first_player_id = ? or second_player_id = ?", id, fid) }
+
+  validates :room_name, presence: true
   validates :state, inclusion: { in: ['waiting', 'setup', 'playing', 'over'] }
   
   STATUSES = ['waiting', 'setup', 'playing', 'over']

@@ -37,6 +37,24 @@ canvas{
 }
 
 .game-body{
-  margin-top: 150px;
+  margin-top: 120px;
   margin-left: 9%;
+}
+
+.open-games{
+  padding: 6px;
+  border: 2px solid #ececec;
+  padding-left: 5px;
+  position: absolute;
+  top: 30px;
+  width: 100px;
+  z-index: 100;
+  li.links {
+    &:hover{
+      background-color: white;
+      a { 
+        color: #a6a6a6;
+      } 
+    }
+  }
 }

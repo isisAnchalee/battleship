@@ -4,6 +4,7 @@ RSpec.describe Game, type: :model do
   let(:game){ FactoryGirl.create(:waiting_game) }
 
   context 'validations' do
+    it { should validate_presence_of(:room_name) }
     it { should validate_inclusion_of(:state)
                   .in_array(['waiting', 'setup', 'playing', 'over']) }
   end

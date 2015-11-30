@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature 'Sessions Controller', :type => :feature do
   describe 'the signup process' do 
 
-    scenario 'User signs up without email' do
+    scenario 'user signs up without email' do
       visit 'users/sign_up'
       fill_in 'email-field', with: ''
       fill_in 'pw-field', with: 'testing'
@@ -11,7 +11,7 @@ RSpec.feature 'Sessions Controller', :type => :feature do
       expect(page).to have_content 'Email can\'t be blank'
     end
 
-    scenario 'User signs in with invalid email' do
+    scenario 'user signs in with invalid email' do
       visit 'users/login'
       fill_in 'email', with: 'butts'
       fill_in 'password', with: 'password'
@@ -19,7 +19,7 @@ RSpec.feature 'Sessions Controller', :type => :feature do
       expect(page).to have_content 'Sign up'
     end
 
-    scenario 'With valid credentials' do
+    scenario 'with valid credentials' do
       visit 'users/sign_up'
       fill_in 'email-field', with: 'testing@test.test'
       fill_in 'pw-field', with: 'test'
@@ -27,7 +27,7 @@ RSpec.feature 'Sessions Controller', :type => :feature do
       expect(page).to have_content 'You have signed up successfully'
     end
 
-    scenario 'New user signs out' do
+    scenario 'new user signs out' do
       visit 'users/sign_up'
       fill_in 'email-field', with: 'testing@test.test'
       fill_in 'pw-field', with: 'test'
@@ -42,7 +42,7 @@ RSpec.feature 'Sessions Controller', :type => :feature do
   describe 'the signin process' do
     let(:user){ FactoryGirl.create(:user) }
    
-    scenario 'User signs in with email' do
+    scenario 'user signs in with email' do
       visit 'users/login'
       fill_in 'email', with: user.email
       fill_in 'password', with: user.password
@@ -50,7 +50,7 @@ RSpec.feature 'Sessions Controller', :type => :feature do
       expect(user.persisted?).to be true
     end
 
-    scenario 'User signs in with invalid email' do
+    scenario 'user signs in with invalid email' do
       visit 'users/login'
       fill_in 'email', with: 'me@me.com'
       fill_in 'password', with: 'password'

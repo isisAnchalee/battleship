@@ -24,6 +24,14 @@ h1{
   font-size: 60px;
 }
 
+ul{
+  list-style: none;
+}
+
+li{
+  padding: 5px;
+}
+
 @font-face {
   font-family: 'Airborne Pilot';
   src: url('arbrnplt.ttf') format('truetype');
@@ -215,10 +223,16 @@ a {
   }
 }
 
-/** flashes **/
-.fake-flashes{
-  position: fixed;
-  top: 40px;
-  left: 40%;
+.open-games-header{
+  color: $wombat-light-white;
+  line-height: 25px;
+  width: 100%;
+  background-color: $wombat-black;
+  margin-top: 100px;
+  height: 25px;
+  margin-bottom: -100px;
+  text-align: center;
+  a:hover{
+    color: $wombat-med-grey
+  }
 }
-

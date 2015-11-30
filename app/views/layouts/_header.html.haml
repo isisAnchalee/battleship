@@ -8,4 +8,8 @@
     .pull-right.margin-right-10
       =link_to('Home', root_path) + " | "
       =link_to('Sign Out', users_sign_out_path)
-
+  - if @open_games && @open_games.length > 0
+    .open-games-header
+      current games: 
+      - @open_games.each do |game|
+        =link_to(game.room_name, game_path(game.id))

@@ -7,7 +7,7 @@ RSpec.feature 'Games Controller', :type => :feature do
       expect(page).to have_content 'Sign up'
     end
 
-    scenario 'Creating new game' do 
+    scenario 'creating new game' do 
       visit 'users/sign_up'
       fill_in 'email-field', with: 'testing@test.test'
       fill_in 'pw-field', with: 'test'
@@ -17,7 +17,7 @@ RSpec.feature 'Games Controller', :type => :feature do
       expect(page).to have_content 'test room'
     end
 
-    scenario 'Visiting games index' do 
+    scenario 'visiting games index' do 
       visit 'users/sign_up'
       fill_in 'email-field', with: 'testing@test.test'
       fill_in 'pw-field', with: 'test'

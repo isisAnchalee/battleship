@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  # before_action :ensure_players_belong_in_game, only: :show
+  before_action :query_scoped_games, only: [:new, :index]
 
   def new
     @game = Game.new
@@ -17,11 +17,11 @@ class GamesController < ApplicationController
     @game = Game.new(game_params)
     @game.first_player_id = current_user.id
     @game.second_player_id = Game::PLACEHOLDER_ID
-    if @game.save!
+    if @game.save
       render :show
     else
       flash.now[:errors] = @game.errors.full_messages
-      redirect_to root
+      redirect_to root_path
     end
   end
 
@@ -44,5 +44,9 @@ class GamesController < ApplicationController
   private
   def game_params
     params.require(:game).permit(:room_name)
+  end
+
+  def query_scoped_games
+    @open_games = Game.open_games(current_user.id, current_user.id)
   end
 end
