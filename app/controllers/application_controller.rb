@@ -4,10 +4,6 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   helper_method :current_user
 
-  def ensure_players_belong_in_game
-    @game && @game.player_ids.include?(params[:user_id])
-  end
-
   def new_session_path(scope)
     new_user_session_path
   end
@@ -20,3 +16,4 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:username, :email, :password, :password_confirmation, :current_password) }
   end
 end
+

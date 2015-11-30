@@ -20,5 +20,5 @@
             #{time_ago_in_words(game.created_at) + ' ago'}
           %td
             #{game.open?}
-    .pagination-wrapper
-      = paginate @games
+  .pagination-wrapper
+    = paginate @games

@@ -1,7 +1,8 @@
 module Api
   module V1
     class GamesController < Api::V1::ApiController 
-      before_action :ensure_players_belong_in_game, only: :show
+      before_action :ensure_players_belong_in_game, only:[ :show, :update ]
+
       after_action :setup_boards, only: :update
 
       # create boards and change game state
@@ -37,8 +38,8 @@ module Api
         render_message('Game is full!')
       end
 
-      def render_message(msg)
-        render json: { message: msg } and return
+      def render_message(msg, status = 200)
+        render json: { message: msg }, status: status and return
       end
 
       def handle_errors
@@ -52,6 +53,14 @@ module Api
 
       def render_errors
         render json: { resp: @game, message: @game.errors.full_messages }
+      end
+
+      def ensure_players_belong_in_game
+        render_401 unless @game && @game.player_ids.include?(params[:user_id])
+      end
+
+      def render_401
+        render_message('unauthorized', 401)
       end
     end
   end

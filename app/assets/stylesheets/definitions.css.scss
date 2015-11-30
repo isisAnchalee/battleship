@@ -5,6 +5,7 @@ $wombat-black       :#020202;
 $wombat-header-red  :#bc0200;
 $wombat-bg-grey     :#c9c9c9;
 $wombat-med-grey    :#a6a6a6;
+$wombat-header-grey :#3d3d3d;
 
 /** base definitions **/
 html {
@@ -14,6 +15,7 @@ html {
 }
 
 body{
+  min-width: 600px;
   font-size: 11px;
   letter-spacing: 2.4px;
   font-weight: 500;
@@ -35,6 +37,15 @@ li{
 @font-face {
   font-family: 'Airborne Pilot';
   src: url('arbrnplt.ttf') format('truetype');
+}
+
+/** flashes **/
+.flashes{
+  position: relative;
+  text-align: center;
+  height: 30px;
+  width: 90%;
+  right: 50px;
 }
 
 /** placeholders **/
@@ -93,6 +104,7 @@ li{
 /** links **/
 
 a {
+  z-index: 150;
   transition: 0.4s ease;
 
   &:hover{
@@ -227,7 +239,7 @@ a {
   color: $wombat-light-white;
   line-height: 25px;
   width: 100%;
-  background-color: $wombat-black;
+  background-color: $wombat-header-grey;
   margin-top: 100px;
   height: 25px;
   margin-bottom: -100px;

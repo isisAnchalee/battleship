@@ -1,5 +1,6 @@
 class GamesController < ApplicationController
   before_action :query_scoped_games, only: [:new, :index]
+  after_action :setup_boards, only: :update
 
   def new
     @game = Game.new
@@ -46,7 +47,15 @@ class GamesController < ApplicationController
     params.require(:game).permit(:room_name)
   end
 
+  # games where first_player_id or second_player_id == current_user.id
   def query_scoped_games
     @open_games = Game.open_games(current_user.id, current_user.id)
+  end
+  
+  def setup_boards
+    @game.player_ids.each do |player_id|
+      Services::BoardFactory.new({ game_id: @game.id,
+                                   user_id: player_id }).build_board
+    end
   end
 end
