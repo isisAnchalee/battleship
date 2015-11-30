@@ -21,7 +21,7 @@ class GamesController < ApplicationController
     if @game.save
       render :show
     else
-      flash.now[:errors] = @game.errors.full_messages
+      flash[:errors] = @game.errors.full_messages.join("")
       redirect_to root_path
     end
   end

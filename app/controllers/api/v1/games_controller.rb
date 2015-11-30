@@ -12,7 +12,7 @@ module Api
         handle_errors
         @game.second_player_id = current_user.id 
         @game.state = 'setup'
-        @game.save! ? join_game : render_errors
+        @game.save! ? join_game : render_game_errors
       end
 
       # used to trigger board status change
@@ -30,29 +30,23 @@ module Api
         end
       end
 
-      def render_unable_to_join
-        render_message('Cannot join your own game!')
-      end
-
-      def render_game_is_full
-        render_message('Game is full!')
-      end
-
-      def render_message(msg, status = 200)
-        render json: { message: msg }, status: status and return
+      def feedback_factory(msg, status = :ok, start_game = true, custom = '')
+        Services::BoardFactory.new({ msg: msg, status: status,
+                              start_game: start_game, custom: custom }).render_message
       end
 
       def handle_errors
-        render_unable_to_join if @game.first_player_id == @game.second_player_id
-        render_game_is_full if @game.is_full?
+        message = :cannot_join if @game.first_player_id == @game.second_player_id
+        message = :game_is_full if @game.is_full?
+        feedback_factory(message).render_message
       end
 
       def join_game
-        render json: { resp: @game, start_game: true, message: 'joined game!!!'}
+        feedback_factory(:joined_game).render_message
       end
 
-      def render_errors
-        render json: { resp: @game, message: @game.errors.full_messages }
+      def render_game_errors
+        feedback_factory(msg: '', :ok, true, custom: @game.errors.full_messages).render_message
       end
 
       def ensure_players_belong_in_game
@@ -60,7 +54,7 @@ module Api
       end
 
       def render_401
-        render_message('unauthorized', 401)
+        feedback_factory(msg: :unauthorized, :unauthorized, false).render_message
       end
     end
   end
