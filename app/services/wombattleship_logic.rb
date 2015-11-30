@@ -31,20 +31,21 @@ module Services
 
     private
 
+    # Public - to place the ship
+    # param move [Object]
+    # move[ship_sym] = integer representing ship
+    # move[ship_deltas] = 2d array of ship deltas
+    #
     # move = {
     #   'ship_deltas': [[0,0],[0,1],[0,2]],
     #   'ship_sym': 3
     # }
-    # param move [Object]
-    # move[ship_sym] = integer representing ship
-    # move[ship_deltas] = 2d array of ship deltas
-    # ex. [[0,0], [0,1], [0,2]]
     def place_ship(move)
       ship_sym = move['ship_sym']
-      move['ship_deltas'].each do |row, col|
+      move['ship_deltas'].each do |(row, col)|
         @board[row][col] = ship_sym
       end
-      build_response('success', [ @board ])
+      build_response('success', @board)
     end
 
     # param move [Object]

@@ -2,7 +2,8 @@ module Api
   module V1
     class GamesController < Api::V1::ApiController 
       # before_action :ensure_players_belong_in_game, only:[ :show, :update ]
-
+      skip_before_action :authenticate_user!, only: [:update]
+      
       after_action :setup_boards, only: :update
 
       # create boards and change game state
