@@ -32,4 +32,12 @@ class Game < ActiveRecord::Base
   def update_state(status)
     update_attribute(:state, "#{Game::STATUSES[status]}")
   end
+
+  def toggle_current_player
+    if current_user_id == first_player_id
+      current_user_id = second_player_id
+    else
+      current_user_id = first_player_id
+    end
+  end
 end

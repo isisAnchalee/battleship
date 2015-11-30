@@ -1,7 +1,7 @@
 module Api
   module V1
     class BoardsController < Api::V1::ApiController 
-      after_action :toggle_players, only: :update
+      after_action :swap_turn, only: :update
       # before_action :validate_correct_player, only: :update
       skip_before_action :authenticate_user!, only: [:update]
 
@@ -38,16 +38,7 @@ module Api
       end
 
       def swap_turn
-        toggle_players
-        @game.save
-      end
-
-      def toggle_players
-        if @game.current_user_id == @game.first_player_id
-          @game.current_user_id = @game.second_player_id
-        else
-          @game.current_user_id = @game.first_player_id
-        end
+        @game.toggle_current_player
       end
 
       # Private - ensure current player plays on the opposite board
