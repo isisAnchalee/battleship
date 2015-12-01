@@ -1,8 +1,6 @@
 # Wombattleships
 Rails Battleship Game & API :100:
 
-_Made with love by @isisAnchalee :dancer: 
-
 ### Game Structure
  Board table has serialized board column: 
  When boards_controller#update is hit, it creates a WombattleshipLogic service object that applies the move on the board
@@ -103,3 +101,5 @@ After setting up all of the ships and changing the game state from 'setup' to 'p
 When playing a move [x, y], the game logic service object will place a flagged 'X' on the map, save the board state, and return the value of the integer that was previously there. After each turn, an iterator walks down the matrix and checks for any non-zero integer values on the board. If there are none left, that means that all ships have been exposed and the game is over.
 
 :shit:
+
+_Made with love by @isisAnchalee :dancer: 
