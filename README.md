@@ -30,6 +30,7 @@ Making a move on an enemies board places 'X' on the board and returns the ship/w
  * [ShouldaMatchers](https://github.com/thoughtbot/shoulda-matchers) semantic model tests
  
 ### Steps to test
+- Make sure to have bundler & Ruby 2.2.1 installed in your shell
 - Check out branch -> bundle -> rake db:migrate -> start server
 - Navigate to '/' and log in through twitter
 - Create a game
