@@ -2,11 +2,11 @@ module Api
   module V1
     class GamesController < Api::V1::ApiController 
       # before_action :ensure_players_belong_in_game, only:[ :show, :update ]
-      skip_before_action :authenticate_user!, only: [:update]
+      skip_before_action :authenticate_user!, only: [:update_status]
     
       # used to trigger board status change
       def update_status
-        @game = Game.find(params[:id])
+        @game = Game.find(params[:game_id])
         @game.update_status(params[:status_code])
         render json: { resp: @game }
       end

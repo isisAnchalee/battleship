@@ -51,29 +51,35 @@ module Services
     # param move [Object]
     # move[pos] = where to expose on the map
     def play_move(move)
-      if valid_move?(move)
-        place_move_on_board(move) 
+      if valid_move?(move['pos'])
+        place_move_on_board(move['pos']) 
       else 
         build_response 'Not a valid move!!!'
       end
     end
-    
+
     # places new pos on board
     # returns entire board and mark
     # of most recently uncovered square
     def place_move_on_board(move)
-      row, col = move[pos]
+      row, col = move
       square = @board[row][col]
       @board[row][col] = 'X'
-      build_response('success', [ @board, square ])
+      check_for_game_over(square)
+    end
+
+    def check_for_game_over(square)
+      return build_response('GAME OVER!!', @board, square) unless game_not_over?
+      build_response('success', @board, square)
     end
 
     # checks if board contains any 
     # ship or unmarked squares
+
     def game_not_over?
-      @board.each do |row|
-        row.any? do |col|
-          col != 0 || col != 'X'
+      @board.any? do |row|
+        row.any? do |square|
+          square != 0 && square != 'X'
         end
       end
     end
@@ -91,11 +97,12 @@ module Services
     end
 
     # standardized response format
-    def build_response(str, board = '')
+    def build_response(str, board = '', square = '')
       { game_id: @game_id,
         user_id: @user_id,
           board: board,
-            str: str }
+            str: str,
+         square: square }
     end
   end
 end

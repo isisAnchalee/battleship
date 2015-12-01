@@ -48,8 +48,12 @@ module Api
       end
 
       def save_response(response)
-        @board.board = response[:board]
-        @board.save
+        if response 
+          @board.board = response[:board]
+          @board.save
+        else
+          render json: { resp: 'GAME OVER!!!' }
+        end
       end
     end
   end

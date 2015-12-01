@@ -35,6 +35,7 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'rspec-rails', '~> 3.0'
+  gem 'railroady'
 end
 
 group :test do

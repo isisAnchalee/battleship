@@ -29,8 +29,8 @@ class Game < ActiveRecord::Base
     [first_player_id, second_player_id]
   end
 
-  def update_state(status)
-    update_attribute(:state, "#{Game::STATUSES[status]}")
+  def update_status(status)
+    update_attribute(:state, "#{Game::STATUSES[status.to_i]}" )
   end
 
   def toggle_current_player
