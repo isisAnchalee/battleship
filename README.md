@@ -40,6 +40,8 @@ Making a move on an enemies board places 'X' on the board and returns the ship/w
 - Go to 'join games' and select the game you previously created (this puts the second player in the same game)
 - Now you are in placement mode. Each user must alternate setting ship deltas with their associated integer on the opponents board. Each ship is identified on the board by integers relating to the size of the ship.
 - Use this [Postman Collection](https://www.getpostman.com/collections/eadb551625a4a4be4d2c) to make the necessary API calls.
+- Make sure to change user_id to the user_id's of YOUR local server's first and second users.
+- Remember first_user makes calls to second_user's board and vise versa.
 
 The front-end is completely responsible for making the correct number of API calls to set up each board with ships. The HTML5 canvas element will be represented as a 2d matrix of tiles representing state of the object at that node in the matrix (water, ships, etc.).
 
