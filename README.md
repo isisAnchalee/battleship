@@ -23,10 +23,10 @@ Making a move on an enemies board places 'X' on the board and returns the ship/w
 
 ### Stuff used to make this:
 
- * [Devise](https://github.com/plataformatec/devise) Auth
+ * [Devise](https://github.com/plataformatec/devise) auth
  * [Omniauth](https://github.com/arunagw/omniauth-twitter) Twitter Oauth
- * [Kaminari](https://github.com/amatsuda/kaminari) Pagination
- * [Capybara](https://github.com/jnicklas/capybara) for gzipping of data to make it fit in URLs
+ * [Kaminari](https://github.com/amatsuda/kaminari) pagination
+ * [Capybara](https://github.com/jnicklas/capybara) behavior tests
  * [ShouldaMatchers](https://github.com/thoughtbot/shoulda-matchers) semantic model tests
  
 ### Steps to test
